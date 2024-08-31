@@ -1,0 +1,104 @@
+.sectionMentor {
+  padding: 3rem 0;
+  position: relative;
+  background-color: #ff011f;
+}
+
+.headingSecondaryCoaches {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+  color: #000000;
+}
+
+.headingSecondaryCoaches span {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+  color: #ffffff;
+}
+
+.mentorContainer {
+  display: flex;
+  gap: 3rem;
+  overflow: hidden;
+}
+
+.mentorCard {
+  background-color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  width: calc(100% / 2 - 1.5rem);
+  transition: transform 0.8s ease-in-out;
+}
+
+.mentorImg {
+  position: relative; /* Important for next/image component */
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0 0;
+  border-right: 1px solid #ff011f;
+  border-top: 1px solid #ff011f;
+}
+
+.mentorContent {
+  padding: 1.5rem;
+  background: #ff011f;
+  border: 2px solid #000000;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100.3%;
+}
+
+.mentorName {
+  color: #000000;
+  font-size: 4rem;
+  line-height: 2;
+}
+
+.mentorDetails {
+  list-style: none;
+  padding: 0;
+}
+
+.mentorDetails li {
+  margin-bottom: 0.5rem;
+  font-size: 1.7rem;
+  color: #eeee;
+}
+
+.sliderBtnMentor {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.sliderBtnMentor {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.sliderBtnLeft {
+  left: 10px;
+}
+
+.sliderBtnRight {
+  right: 10px;
+}

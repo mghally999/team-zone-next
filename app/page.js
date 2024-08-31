@@ -10,6 +10,8 @@ import ImageSlider from "./components/ImageSlider";
 import ClassBooking from "./components/ClassBooking";
 import RibbonContainer from "./components/RibbonContainer";
 import ClientsReviews from "./components/ClientsReviews";
+import MentorSlider from "./components/MentorSlider";
+import Footer from "./components/Footer";
 
 export default function HomePage() {
   return (
@@ -24,6 +26,8 @@ export default function HomePage() {
         <ClassBooking />
         <RibbonContainer />
         <ClientsReviews />
+        <MentorSlider />
+        <Footer />
       </main>
     </>
   );

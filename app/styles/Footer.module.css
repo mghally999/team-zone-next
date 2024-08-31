@@ -1,0 +1,109 @@
+/* FOOTER SECTION START */
+.footer {
+  background-color: #000; /* Dark background */
+  padding: 4rem 0; /* Adjust padding */
+  border-top: 1px solid #ff011f;
+  border-bottom: 1px solid #ff011f;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.gridFooter {
+  display: grid;
+  grid-template-columns: 1.6fr 1.5fr 1fr;
+  column-gap: 6rem; /* Spacing between columns */
+  align-items: center; /* Align items at the start of each column */
+  row-gap: 9.6rem;
+}
+
+.logoCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerLogo {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  height: 7.4rem;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 2.4rem;
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.socialIcon {
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+.footerHeading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.2rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.contacts p,
+.footerLink {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.footerLink {
+  text-decoration: none;
+  transition: all 0.3s;
+  color: #767676;
+}
+
+.footerLink:hover {
+  text-decoration: underline;
+  color: #555;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+/* WhatsApp Floating Button Styles */
+.whatsappFloat {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.whatsappFloat:hover {
+  transform: scale(1.1);
+}
+/* FOOTER SECTION END */
