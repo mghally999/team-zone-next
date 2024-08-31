@@ -179,3 +179,18 @@ body {
 .margin-right-sm {
   margin-right: 1.6rem;
 }
+
+/* Global Styles */
+
+/* Focus effect */
+/* Remove arrows for number input */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}

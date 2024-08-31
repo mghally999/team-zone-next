@@ -1,0 +1,117 @@
+.sectionHow {
+  padding: 5.5rem 0;
+  background: #ff011f;
+}
+
+.container {
+  max-width: 123rem;
+  /* padding: 0 3.2rem; */
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 0;
+  row-gap: 0;
+}
+
+.grid2Cols {
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.gridCenterV {
+  align-items: center;
+}
+
+.stepTextBox {
+  padding: 4rem 6rem;
+  border-radius: 20px;
+}
+
+.stepNumber {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.stepNumber span {
+  color: #000000;
+}
+
+.cta {
+  display: grid;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.ctaTextBox {
+  padding: 4rem 6rem;
+  background: #000000;
+  border-radius: 20px;
+}
+
+.headingSecondary {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 3.2rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.ctaForm {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.ctaForm input,
+.ctaForm select {
+  width: 100%;
+  padding: 1rem 0;
+  font-size: 1.8rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  border: none;
+  border-bottom: 2px solid #d3d3d3;
+  background: none;
+  border-radius: 0;
+}
+
+.ctaForm input:focus {
+  border-bottom: 2px solid #ff011f;
+  outline: none;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1.5rem 3rem;
+  text-align: center;
+  color: #fff;
+  background-color: #ff011f;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e60017;
+}
+
+.btnForm {
+  margin-top: 2rem;
+}

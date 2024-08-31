@@ -7,6 +7,8 @@ import Programs from "./components/Programs/Programs";
 import SportsExperience from "./components/SportsExperience";
 import MartialArtsShowcase from "./components/MartialArtsShowcase";
 import ImageSlider from "./components/ImageSlider";
+import ClassBooking from "./components/ClassBooking";
+import RibbonContainer from "./components/RibbonContainer";
 
 export default function HomePage() {
   return (
@@ -18,6 +20,8 @@ export default function HomePage() {
         <SportsExperience />
         <MartialArtsShowcase />
         <ImageSlider />
+        <ClassBooking />
+        <RibbonContainer />
       </main>
     </>
   );
