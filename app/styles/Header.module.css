@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000000;
+  height: 12.6rem;
+  padding: 0 11.8rem;
+  position: relative;
+  margin-bottom: 3.2rem;
+}
+
+@media (max-width: 75em) {
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.logo {
+  height: 7.4rem;
+  width: 100%;
+}

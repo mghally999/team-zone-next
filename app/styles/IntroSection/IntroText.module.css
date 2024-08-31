@@ -1,0 +1,62 @@
+.introTextBox {
+}
+
+.headingPrimaryIntro {
+  font-family: "Outfit", sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 5.5rem;
+  line-height: 1.05;
+  letter-spacing: -0.1px;
+  margin-bottom: 3.2rem;
+  color: #ff011f;
+}
+
+@media (max-width: 84em) {
+  .headingPrimaryIntro {
+    font-size: 4.4rem;
+  }
+}
+
+.heroDescription {
+  font-size: 2.7rem;
+  font-weight: 300;
+  letter-spacing: 0px;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+  color: #ffffff;
+}
+
+@media (max-width: 59em) {
+  .introTextBox {
+    text-align: center;
+  }
+}
+
+.btn {
+  font-family: "Oswald", sans-serif;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn--full {
+  background-color: #ff011f;
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  color: #000;
+  background-color: #fff;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem;
+}

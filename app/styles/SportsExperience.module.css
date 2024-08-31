@@ -1,0 +1,46 @@
+.sectionSports {
+  padding: 5.5rem 0;
+  background-color: #000000;
+}
+
+@media (max-width: 34em) {
+  .sectionSports {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.headingPrimarySports {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 76px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+@media (max-width: 84em) {
+  .headingPrimarySports,
+  .headingPrimarySports span {
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .headingPrimarySports,
+  .headingPrimarySports span {
+    font-size: 6rem;
+  }
+}
+
+.headingPrimarySports span {
+  color: #ff011f;
+}

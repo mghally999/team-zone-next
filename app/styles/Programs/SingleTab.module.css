@@ -1,0 +1,25 @@
+/* SingleTab.module.css */
+
+.button {
+  margin-top: 1rem;
+  width: 300px;
+  background-color: #ffffff;
+  color: #000;
+  border: 1px solid #ff011f;
+  padding: 0.5rem 1rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 50px;
+  padding: 1rem 0rem;
+}
+
+.button:hover {
+  color: #ffffff;
+  background-color: #ff011f;
+}
+
+.button.active {
+  color: #ffffff;
+  background-color: #ff011f;
+}
