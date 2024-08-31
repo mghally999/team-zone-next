@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Programs from "./components/Programs/Programs";
 import SportsExperience from "./components/SportsExperience";
 import MartialArtsShowcase from "./components/MartialArtsShowcase";
+import ImageSlider from "./components/ImageSlider";
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
         <Programs />
         <SportsExperience />
         <MartialArtsShowcase />
+        <ImageSlider />
       </main>
     </>
   );

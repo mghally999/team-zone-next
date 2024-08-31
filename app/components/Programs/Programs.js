@@ -9,11 +9,11 @@ export default function Programs() {
 
     return (
         <section className={styles.sectionPrograms}>
+            <h1 className={styles.headingPrimaryPrograms}>
+                ADAPTIVE PROGRAM FOR ALL AGES
+            </h1>
             <div className={styles.programs}>
                 <div className={styles.heroTextBox2nd}>
-                    <h1 className={styles.headingPrimaryPrograms}>
-                        <span>ADAPTIVE PROGRAM FOR ALL AGES</span>
-                    </h1>
                     <TabsContainer />
                     <button className={bookingButton} type="submit">BOOK A TRIAL CLASS</button>
                 </div>
@@ -24,5 +24,4 @@ export default function Programs() {
             </div>
         </section>
     );
-};
-
+}

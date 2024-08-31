@@ -1,8 +1,14 @@
-.sectionHero3rd {
+.sectionMartialArts {
   background-color: #333333;
 }
 
-.sectionHero3rd li {
+/* @media (max-width: 34em) {
+  .sectionMartialArts {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+} */
+
+.sectionMartialArts li {
   color: #ffffff;
   font-size: 30px;
   font-weight: 500;
@@ -10,23 +16,55 @@
   margin-bottom: 12px;
 }
 
-.hero3rd {
+.martialArts {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.hero3rd ul {
+@media (max-width: 59em) {
+  .martialArts {
+    max-width: 120rem;
+  }
+}
+
+@media (max-width: 75em) {
+  .martialArts {
+    gap: 4.8rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .martialArts {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .martialArts {
+    padding: 3.2rem;
+  }
+}
+
+.martialArtsBox ul {
   padding-left: 5rem;
 }
 
-.heroTextBox3rd {
+.martialArtsBox {
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 5.5rem 0 5.5rem 5.5rem;
+  padding: 4.8rem 3.2rem 9.6rem 3.2rem;
 }
 
-.headingPrimary3rd {
+@media (max-width: 59em) {
+  .martialArtsBox {
+    padding: 0;
+    font-size: 4.4rem;
+  }
+}
+
+.headingPrimaryMartial {
   font-size: 5.2rem;
   line-height: 1.9;
   letter-spacing: 1px;
@@ -34,7 +72,14 @@
   color: #d9d9d9;
 }
 
-.headingPrimary3rrd {
+@media (max-width: 59em) {
+  .headingPrimaryMartial {
+    font-size: 3.5rem;
+    margin: 0;
+  }
+}
+
+.headingPrimaryMartialTwo {
   font-size: 3.6rem;
   margin-top: 5rem;
   line-height: 1.05;
@@ -42,7 +87,19 @@
   color: #000;
 }
 
-.heroImgBox {
+@media (max-width: 59em) {
+  .headingPrimaryMartialTwo {
+    margin-bottom: 0;
+  }
+
+  .headingPrimaryMartial span {
+    display: inline-block;
+    font-size: 2.9rem;
+    margin: 0 auto;
+  }
+}
+
+.martialImgBox {
   width: 100%;
   height: 100%;
   position: relative;
@@ -51,8 +108,21 @@
   justify-content: center;
 }
 
-.heroImg2nd {
+@media (max-width: 59em) {
+  .martialImgBox {
+    display: block;
+  }
+}
+
+.martialImg {
+  object-fit: cover;
   width: 100%;
   height: 100%;
   opacity: 0.8;
+}
+
+@media (max-width: 59em) {
+  .martialImg {
+    position: inset;
+  }
 }
