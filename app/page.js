@@ -9,6 +9,7 @@ import MartialArtsShowcase from "./components/MartialArtsShowcase";
 import ImageSlider from "./components/ImageSlider";
 import ClassBooking from "./components/ClassBooking";
 import RibbonContainer from "./components/RibbonContainer";
+import ClientsReviews from "./components/ClientsReviews";
 
 export default function HomePage() {
   return (
@@ -22,6 +23,7 @@ export default function HomePage() {
         <ImageSlider />
         <ClassBooking />
         <RibbonContainer />
+        <ClientsReviews />
       </main>
     </>
   );

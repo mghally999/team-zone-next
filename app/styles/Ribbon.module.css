@@ -10,7 +10,7 @@
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  gap: 4rem;
+  gap: 5rem;
   animation: moveRibbon 10s linear infinite;
 }
 
