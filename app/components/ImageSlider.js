@@ -43,7 +43,7 @@ const ImageSlider = () => {
                         className={`${styles.slide} ${index === currentSlide ? styles.active : ""}`}
                         style={{
                             transform: `translateX(-${currentSlide * 100}%)`,
-                            transition: 'transform 1s ease-in-out', // Smooth transition
+                            transition: 'transform 1s ease-in-out',
                         }}
                     >
                         <Image

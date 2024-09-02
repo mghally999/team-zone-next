@@ -9,7 +9,7 @@ export default function Header() {
       <Link href="/">
         <Image className={styles.logo}
           alt="Team Zone Logo"
-          src="/teamzone-logo.png"
+          src="/L2.png"
           width={150}
           height={50}
         />

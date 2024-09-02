@@ -15,7 +15,7 @@
 
 .programs {
   display: grid;
-  grid-template-columns: 1fr 1.6fr; /* Adjusted to give more space to the content */
+  grid-template-columns: 1fr 1.6fr;
   align-items: start;
   gap: 1rem;
   max-width: 130rem;
@@ -51,10 +51,10 @@
 .headingPrimaryPrograms {
   font-family: "Outfit", sans-serif;
   font-weight: 700;
-  font-size: 4.8rem; /* Adjusted font size */
+  font-size: 4.8rem;
   line-height: 1.2;
   color: #000000;
-  grid-column: span 2; /* Span across the grid columns */
+  grid-column: span 2;
 
   gap: 9.6rem;
   max-width: 130rem;
@@ -73,7 +73,7 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  grid-column: 1; /* Place in the first grid column */
+  grid-column: 1;
 }
 
 .heroImgBox {
@@ -81,13 +81,13 @@
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  grid-column: 2; /* Place in the second grid column */
+  grid-column: 2;
 }
 
 @media (max-width: 59em) {
   .heroImgBox {
     font-size: 4rem;
-    grid-column: 1; /* Place in the first grid column */
+    grid-column: 1;
   }
 }
 

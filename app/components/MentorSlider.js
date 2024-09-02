@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Image from 'next/image';
 import styles from '../styles/MentorSlider.module.css';
 
 const mentors = [

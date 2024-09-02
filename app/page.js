@@ -5,7 +5,7 @@ import IntroSection from "./components/IntroSection/IntroSection";
 import Header from "./components/Header";
 import Programs from "./components/Programs/Programs";
 import SportsExperience from "./components/SportsExperience";
-import MartialArtsShowcase from "./components/MartialArtsShowcase";
+import MartialArtsShowcase from "./components/MartialArts/MartialArts";
 import ImageSlider from "./components/ImageSlider";
 import ClassBooking from "./components/ClassBooking";
 import RibbonContainer1 from "./components/RibbonContainer1";

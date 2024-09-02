@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 import TabsContainer from './TabsContainer';
 import TabContent from './TabContent';
-import PopupForm from '../PopUpForm'; // Import the PopupForm component
+import PopupForm from '../PopUpForm';
 import classNames from 'classnames';
 import styles from "../../styles/Programs/Programs.module.css";
 
 export default function Programs() {
-    const [showPopup, setShowPopup] = useState(false); // State to manage popup visibility
+    const [showPopup, setShowPopup] = useState(false);
 
     const bookingButton = classNames(styles.btn, styles['btn--full'], styles['margin-right-sm']);
 
     const handlePopupOpen = () => {
-        setShowPopup(true); // Show the popup
+        setShowPopup(true);
     };
 
     const handlePopupClose = () => {
-        setShowPopup(false); // Hide the popup
+        setShowPopup(false);
     };
 
     return (
@@ -29,7 +29,7 @@ export default function Programs() {
                     <button
                         className={bookingButton}
                         type="button"
-                        onClick={handlePopupOpen} // Handle button click to show popup
+                        onClick={handlePopupOpen}
                     >
                         BOOK A TRIAL CLASS
                     </button>
@@ -39,7 +39,7 @@ export default function Programs() {
                     <TabContent />
                 </div>
             </div>
-            <PopupForm show={showPopup} onClose={handlePopupClose} /> {/* Include the PopupForm component */}
+            <PopupForm show={showPopup} onClose={handlePopupClose} />
         </section>
     );
 }

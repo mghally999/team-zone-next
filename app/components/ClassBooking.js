@@ -8,7 +8,7 @@ export default function ClassBooking() {
                 {/* STEP 01 */}
                 <div className={styles.stepTextBox}>
                     <p className={styles.stepNumber}>
-                        TURN WEAKNESS INTO <span>STRENGTHS</span>
+                        TURN WEAKNESS INTO <span>STRENGTH</span>
                     </p>
                 </div>
                 <div className={styles.cta}>
