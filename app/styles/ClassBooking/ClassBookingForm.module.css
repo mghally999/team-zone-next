@@ -5,6 +5,26 @@
   overflow: hidden;
 }
 
+@media (max-width: 84em) {
+  .cta {
+    grid-template-columns: 1fr;
+    padding: 0 3.2rem;
+    box-shadow: unset;
+  }
+}
+
+@media (max-width: 75em) {
+  .cta {
+    padding: 0 3.2rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .cta {
+    padding: 0 3.2rem;
+  }
+}
+
 .ctaTextBox {
   padding: 4rem 6rem;
   background: #000000;

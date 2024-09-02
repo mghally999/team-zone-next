@@ -3,6 +3,12 @@
   background: #ff011f;
 }
 
+@media (max-width: 34em) {
+  .sectionClassBooking {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+}
+
 .container {
   max-width: 123rem;
   margin: 0 auto;
@@ -20,4 +26,17 @@
 
 .gridCenterV {
   align-items: center;
+}
+
+@media (max-width: 75em) {
+  .grid2Cols {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 34em) {
+  .grid,
+  .grid2Cols {
+    grid-template-columns: 1fr;
+  }
 }

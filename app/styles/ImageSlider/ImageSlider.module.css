@@ -7,7 +7,7 @@
 
 .slides {
   display: flex;
-  transition: transform 1s ease-in-out; /* Smoother transition */
+  transition: transform 1s ease-in-out;
   height: 100%;
 }
 
@@ -23,7 +23,6 @@
   }
 
   .slide img {
-    object-fit: fill;
   }
 }
 

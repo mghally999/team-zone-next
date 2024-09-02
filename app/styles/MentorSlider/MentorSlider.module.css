@@ -11,6 +11,12 @@
   color: #000000;
 }
 
+@media (max-width: 84em) {
+  .headingSecondaryCoaches {
+    font-size: 3.4rem;
+  }
+}
+
 .headingSecondaryCoaches span {
   font-size: 4.4rem;
   line-height: 1.2;
@@ -39,6 +45,11 @@
   transition: transform 0.8s ease-in-out;
 }
 
+@media (max-width: 768px) {
+  .mentorCard {
+    width: 100%;
+  }
+}
 .mentorImg {
   position: relative; /* Important for next/image component */
   height: 700px;

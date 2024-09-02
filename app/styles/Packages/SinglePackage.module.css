@@ -10,6 +10,12 @@
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .package {
+    width: 100%;
+  }
+}
+
 .package:hover {
   transform: translateY(-1.2rem);
 }

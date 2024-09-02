@@ -6,3 +6,15 @@
   align-items: center;
   justify-content: center;
 }
+
+@media (max-width: 84em) {
+  .reviews {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 75em) {
+  .reviews {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

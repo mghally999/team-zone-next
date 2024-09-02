@@ -10,6 +10,12 @@
   color: #ffffff;
 }
 
+@media (max-width: 84em) {
+  .bookingHeading {
+    font-size: 6.4rem;
+  }
+}
+
 .bookingHeading span {
   color: #000000;
 }
