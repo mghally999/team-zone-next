@@ -1,3 +1,5 @@
+@import url("https://unpkg.com/ionicons@5.5.2/dist/css/ionicons.min.css");
+
 /*
 --- 01 TYPOGRAPHY SYSTEM
 
@@ -116,6 +118,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
 }
 
 html {

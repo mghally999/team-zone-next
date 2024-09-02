@@ -18,6 +18,12 @@
   color: #ffffff;
 }
 
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
 .mentorContainer {
   display: flex;
   gap: 3rem;

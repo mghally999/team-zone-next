@@ -16,7 +16,7 @@ const ImageSlider = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-        }, 3000); // Slide change interval (3 seconds)
+        }, 3000);
         return () => clearInterval(interval);
     }, [slides.length]);
 

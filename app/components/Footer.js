@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from '../styles/Footer.module.css'; // Assuming you have your CSS in this path
+import styles from '../styles/Footer.module.css';
+import { LogoInstagram, LogoWhatsapp } from 'react-ionicons';
 
 const Footer = () => {
   return (
@@ -16,14 +17,14 @@ const Footer = () => {
           <ul className={styles.socialLinks}>
             <li>
               <a className={styles.footerLink} href="https://www.instagram.com/team_zone10/" target="_blank" rel="noopener noreferrer">
-                <ion-icon className={styles.socialIcon} name="logo-instagram"></ion-icon>
+                <LogoInstagram
+                  color={'#fff'}
+                  height="24px"
+                  width="24px"
+                />
               </a>
             </li>
-            <li>
-              <a className={styles.footerLink} href="#">
-                <ion-icon className={styles.socialIcon} name="logo-facebook"></ion-icon>
-              </a>
-            </li>
+
           </ul>
         </div>
 
@@ -47,7 +48,11 @@ const Footer = () => {
 
       {/* WhatsApp Floating Button */}
       <a href="https://wa.me/971508272111" className={styles.whatsappFloat} target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
-        <ion-icon name="logo-whatsapp"></ion-icon>
+        <LogoWhatsapp
+          color={'#fff'}
+          height="30px"
+          width="30px"
+        />
       </a>
     </footer>
   );

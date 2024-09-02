@@ -1,15 +1,13 @@
 import React from 'react';
-import styles from '../styles/Ribbon.module.css';
+import styles from '../styles/RibbonContainer1.module.css';
 
 const skills = [
-    'FUNCTIONAL TRAINING',
-    'BJJ',
-    'BOXING',
+    'WORLD CHAMPION',
 ];
 
-export default function RibbonContainer() {
+export default function RibbonContainer1() {
     // Create a new array that repeats the skills multiple times
-    const repeatedSkills = Array(5).fill(skills).flat();
+    const repeatedSkills = Array(9).fill(skills).flat();
 
     return (
         <div className={styles.ribbonContainer}>
