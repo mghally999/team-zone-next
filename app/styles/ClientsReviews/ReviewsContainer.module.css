@@ -1,0 +1,8 @@
+.reviews {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+  align-items: center;
+  justify-content: center;
+}

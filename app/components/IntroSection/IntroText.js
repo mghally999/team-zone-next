@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import classNames from "classnames";
 import styles from "../../styles/IntroSection/IntroText.module.css";
-import PopupForm from "../PopUpForm";
+import PopupForm from "../PopUpForm/PopUpForm";
 
 export default function IntroText() {
     const [showPopup, setShowPopup] = useState(false);

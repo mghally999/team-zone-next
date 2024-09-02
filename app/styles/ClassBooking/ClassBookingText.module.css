@@ -1,0 +1,15 @@
+.bookingTextBox {
+  padding: 4rem 6rem;
+  border-radius: 20px;
+}
+
+.bookingHeading {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 8.6rem;
+  color: #ffffff;
+}
+
+.bookingHeading span {
+  color: #000000;
+}

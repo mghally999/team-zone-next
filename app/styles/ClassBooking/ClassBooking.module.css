@@ -1,0 +1,23 @@
+.sectionClassBooking {
+  padding: 5.5rem 0;
+  background: #ff011f;
+}
+
+.container {
+  max-width: 123rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 0;
+  row-gap: 0;
+}
+
+.grid2Cols {
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.gridCenterV {
+  align-items: center;
+}

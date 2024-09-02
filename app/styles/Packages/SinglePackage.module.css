@@ -1,0 +1,116 @@
+.package {
+  transition: all 0.4s;
+  position: relative;
+  background-color: #fff;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 4px 41px rgba(0, 0, 0, 0.4);
+  width: 400px;
+  height: 434px;
+  margin: 0 auto;
+}
+
+.package:hover {
+  transform: translateY(-1.2rem);
+}
+
+.packageImg1,
+.packageImg2,
+.packageImg3 {
+  width: 100%;
+  height: 60%;
+  background-repeat: no-repeat;
+  background-position: 100% 30%;
+  background-size: cover;
+}
+
+.packageImg1 {
+  background-image: url("/martial1.png");
+}
+
+.packageImg2 {
+  background-image: url("/martial2.png");
+}
+
+.packageImg3 {
+  background-image: url("/martial3.jpeg");
+}
+
+.packageContent {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.packageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.packageTitle {
+  color: #000;
+  font-size: 21px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.ageBadge {
+  border-radius: 12px;
+  padding: 5px 20px;
+  background: #ff011f;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.packageTags {
+  margin-top: auto;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  margin-top: 1.2rem;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 100px;
+}
+
+.btn {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-size: 16px;
+  margin-top: 26px;
+  align-self: center;
+  background-color: #ff011f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  line-height: 22.5px;
+  width: 163px;
+}
+
+.btn--full {
+  background-color: #ff011f;
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  color: #000;
+  background-color: #fff;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem;
+}

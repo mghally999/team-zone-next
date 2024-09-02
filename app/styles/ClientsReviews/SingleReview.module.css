@@ -1,0 +1,27 @@
+.review {
+  display: flex;
+  align-items: flex-start;
+}
+
+.reviewContent {
+  max-width: calc(100% - 8rem);
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewName {
+  font-size: 2rem;
+  color: #6f6f6f;
+  margin-bottom: 0.8rem;
+}
+
+.reviewStars {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.reviewText {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #555;
+}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import TabsContainer from './TabsContainer';
 import TabContent from './TabContent';
-import PopupForm from '../PopUpForm';
+import PopupForm from '../PopUpForm/PopUpForm';
 import classNames from 'classnames';
 import styles from "../../styles/Programs/Programs.module.css";
 

@@ -1,19 +1,20 @@
 "use client";
 
 import React, { useState } from "react";
-import IntroSection from "./components/IntroSection/IntroSection";
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
+import { IntroSection } from "./components/IntroSection";
 import Programs from "./components/Programs/Programs";
-import SportsExperience from "./components/SportsExperience";
-import MartialArtsShowcase from "./components/MartialArts/MartialArts";
-import ImageSlider from "./components/ImageSlider";
-import ClassBooking from "./components/ClassBooking";
-import RibbonContainer1 from "./components/RibbonContainer1";
-import RibbonContainer2 from "./components/RibbonContainer2";
-import ClientsReviews from "./components/ClientsReviews";
-import MentorSlider from "./components/MentorSlider";
-import Footer from "./components/Footer";
-import Packages from "./components/Packages";
+import SportsExperience from "./components/SportsExperience/SportsExperience";
+import { MartialArts } from "./components/MartialArts";
+import ImageSlider from "./components/ImageSlider/ImageSlider";
+import ClassBooking from "./components/ClassBooking/ClassBooking";
+import RibbonContainer1 from "./components/RibbonContainer1/RibbonContainer1";
+import RibbonContainer2 from "./components/RibbonContainer2/RibbonContainer2";
+import Packages from "./components/Packages/Packages";
+import ClientsReviews from "./components/ClientsReviews/ClientsReviews";
+import MentorSlider from "./components/MentorSlider/MentorSlider";
+import Footer from "./components/Footer/Footer";
+
 
 export default function HomePage() {
   return (
@@ -23,7 +24,7 @@ export default function HomePage() {
         <IntroSection />
         <Programs />
         <SportsExperience />
-        <MartialArtsShowcase />
+        <MartialArts />
         <ImageSlider />
         <ClassBooking />
         <RibbonContainer1 />
