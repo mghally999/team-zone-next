@@ -6,6 +6,12 @@
 }
 
 .reviewsContainer {
-  padding: 9.6rem;
+  padding: 5.5rem 0;
   background-color: #fff;
+}
+
+@media (max-width: 34em) {
+  .reviewsContainer {
+    padding: 5.5rem 3.2rem;
+  }
 }
