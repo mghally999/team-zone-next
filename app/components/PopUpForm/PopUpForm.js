@@ -3,11 +3,11 @@ import styles from "../../styles/PopUpForm/PopUpForm.module.css";
 
 export default function PopupForm({ show, onClose }) {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phoneNumber: '',
-    age: '',
-    gender: '',
+    name: "",
+    email: "",
+    phoneNumber: "",
+    age: "",
+    gender: "",
   });
 
   useEffect(() => {
@@ -28,21 +28,33 @@ export default function PopupForm({ show, onClose }) {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Prevents the default form submission
+
+    // Trimming spaces and capitalizing the first letter of gender
+    const formattedData = {
+      name: formData.name.trim(),
+      email: formData.email.trim(),
+      phoneNumber: formData.phoneNumber.trim(),
+      age: formData.age.trim(),
+      gender:
+        formData.gender.charAt(0).toUpperCase() +
+        formData.gender.slice(1).toLowerCase().trim(),
+    };
 
     const whatsappMessage = `
-      Name: ${formData.name}\n
-      Email: ${formData.email}\n
-      Mobile Number: ${formData.phoneNumber}\n
-      Age: ${formData.age}\n
-      Gender: ${formData.gender}
+Name: ${formattedData.name}
+Email: ${formattedData.email}
+Mobile Number: ${formattedData.phoneNumber}
+Age: ${formattedData.age}
+Gender: ${formattedData.gender}
     `;
 
-    const whatsappLink = `https://wa.me/971508272111?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappLink = `https://wa.me/971508272111?text=${encodeURIComponent(
+      whatsappMessage
+    )}`;
 
-    window.open(whatsappLink, '_blank'); // Opens WhatsApp with the message
+    window.open(whatsappLink, "_blank"); // Opens WhatsApp with the message
 
     onClose(); // Closes the popup form
   };
