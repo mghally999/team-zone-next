@@ -1,7 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../../styles/PopUpForm/PopUpForm.module.css";
 
 export default function PopupForm({ show, onClose }) {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phoneNumber: '',
+    age: '',
+    gender: '',
+  });
+
   useEffect(() => {
     const handleEscape = (event) => {
       if (event.key === "Escape") {
@@ -16,6 +24,29 @@ export default function PopupForm({ show, onClose }) {
     };
   }, [onClose]);
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const whatsappMessage = `
+      Name: ${formData.name}\n
+      Email: ${formData.email}\n
+      Mobile Number: ${formData.phoneNumber}\n
+      Age: ${formData.age}\n
+      Gender: ${formData.gender}
+    `;
+
+    const whatsappLink = `https://wa.me/971508272111?text=${encodeURIComponent(whatsappMessage)}`;
+
+    window.open(whatsappLink, '_blank'); // Opens WhatsApp with the message
+
+    onClose(); // Closes the popup form
+  };
+
   if (!show) return null;
 
   return (
@@ -27,12 +58,15 @@ export default function PopupForm({ show, onClose }) {
         </div>
         <div className={styles.popupTextBox}>
           <h2 className={styles.popupHeading}>JOIN US NOW</h2>
-          <form className={styles.popupForm}>
+          <form className={styles.popupForm} onSubmit={handleSubmit}>
             <div className={styles.formGroup}>
               <input
                 className={styles.popupInput}
                 type="text"
                 placeholder="Name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
                 required
               />
             </div>
@@ -41,6 +75,9 @@ export default function PopupForm({ show, onClose }) {
                 className={styles.popupInput}
                 type="email"
                 placeholder="E-mail"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
                 required
               />
             </div>
@@ -49,6 +86,9 @@ export default function PopupForm({ show, onClose }) {
                 className={styles.popupInput}
                 type="tel"
                 placeholder="Mobile number"
+                name="phoneNumber"
+                value={formData.phoneNumber}
+                onChange={handleChange}
                 required
               />
             </div>
@@ -57,12 +97,21 @@ export default function PopupForm({ show, onClose }) {
                 className={styles.popupInput}
                 type="number"
                 placeholder="Age"
+                name="age"
+                value={formData.age}
+                onChange={handleChange}
                 required
               />
             </div>
             <div className={styles.formGroup}>
-              <select className={styles.popupInput} required>
-                <option value="" disabled selected>
+              <select
+                className={styles.popupInput}
+                name="gender"
+                value={formData.gender}
+                onChange={handleChange}
+                required
+              >
+                <option value="" disabled>
                   Gender
                 </option>
                 <option value="male">Male</option>
