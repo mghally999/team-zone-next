@@ -3,3 +3,9 @@
   line-height: 1.2;
   margin-bottom: 9.6rem;
 }
+
+@media (max-width: 75em) {
+  .headingSecondary {
+    font-size: 3.6rem;
+  }
+}

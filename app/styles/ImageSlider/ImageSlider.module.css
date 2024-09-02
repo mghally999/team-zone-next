@@ -17,6 +17,16 @@
   position: relative;
 }
 
+@media (max-width: 59em) {
+  .slide {
+    width: 60%;
+  }
+
+  .slide img {
+    object-fit: fill;
+  }
+}
+
 .prevBtn,
 .nextBtn {
   position: absolute;

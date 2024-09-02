@@ -20,6 +20,11 @@
   font-size: 3.2rem;
   line-height: 1.2;
 }
+@media (max-width: 75em) {
+  .headingSecondary {
+    font-size: 2.6rem;
+  }
+}
 
 .ctaForm {
   display: flex;
