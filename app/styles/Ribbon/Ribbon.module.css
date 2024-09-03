@@ -27,6 +27,13 @@
   line-height: 60px;
 }
 
+@media (max-width: 59em) {
+  .movingSkill,
+  .movingSkillSeparator {
+    font-size: 40px;
+  }
+}
+
 @keyframes moveRibbon {
   0% {
     transform: translateX(0%);

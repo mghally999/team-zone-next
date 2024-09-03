@@ -25,13 +25,13 @@
 
 @media (max-width: 59em) {
   .tabContent p {
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 1.4;
-    margin-bottom: 1rem;
+    margin-bottom: 1.8rem;
   }
 
   .tabContent li {
-    font-size: 1.5rem; /* Adjusted font size for mobile */
+    font-size: 1.8rem; /* Adjusted font size for mobile */
   }
 }

@@ -20,6 +20,7 @@
 @media (max-width: 59em) {
   .slide {
     width: 60%;
+    height: auto;
   }
 }
 
@@ -33,16 +34,16 @@
   border: none;
   cursor: pointer;
   z-index: 2;
-  padding: 1.5rem;
-  font-size: 2rem;
+  padding: 1.5rem; /* Increase the padding to make the buttons bigger */
+  font-size: 2rem; /* Increase the font size for larger arrow icons */
 }
 
 .prevBtn {
-  left: 20px;
+  left: 20px; /* Adjusted positioning */
 }
 
 .nextBtn {
-  right: 20px;
+  right: 20px; /* Adjusted positioning */
 }
 
 .dots {
@@ -63,5 +64,5 @@
 }
 
 .dot.active {
-  background-color: #333333;
+  background-color: #333333; /* Active dot color */
 }

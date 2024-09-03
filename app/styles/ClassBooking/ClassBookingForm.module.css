@@ -1,10 +1,28 @@
-/* ClassBookingForm.module.css */
-
 .cta {
   display: grid;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 0;
   overflow: hidden;
+}
+
+@media (max-width: 84em) {
+  .cta {
+    grid-template-columns: 1fr;
+    padding: 0 3.2rem;
+    box-shadow: unset;
+  }
+}
+
+@media (max-width: 75em) {
+  .cta {
+    padding: 0 3.2rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .cta {
+    padding: 0 3.2rem;
+  }
 }
 
 .ctaTextBox {
@@ -22,6 +40,11 @@
   font-size: 3.2rem;
   line-height: 1.2;
 }
+@media (max-width: 75em) {
+  .headingSecondary {
+    font-size: 2.6rem;
+  }
+}
 
 .ctaForm {
   display: flex;
@@ -37,7 +60,7 @@
 .ctaForm input,
 .ctaForm select {
   width: 100%;
-  padding: 1rem 0;
+  padding: 1rem;
   font-size: 1.8rem;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
