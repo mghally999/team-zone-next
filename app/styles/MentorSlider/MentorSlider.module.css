@@ -5,6 +5,8 @@
 }
 
 .headingSecondaryCoaches {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
   font-size: 4.4rem;
   line-height: 1.2;
   margin-bottom: 9.6rem;
@@ -14,6 +16,12 @@
 @media (max-width: 84em) {
   .headingSecondaryCoaches {
     font-size: 3.4rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .headingSecondaryCoaches {
+    margin-bottom: 2rem;
   }
 }
 

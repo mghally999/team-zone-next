@@ -9,7 +9,6 @@ export default function MartialArtsImg() {
         src="/img3.jpeg"
         alt="Martial Arts"
         responsive="true"
-        lazy
         width={500}
         height={300}
         className={styles.martialImg}

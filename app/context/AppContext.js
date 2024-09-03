@@ -1,6 +1,12 @@
 "use client";
 
-import React, { createContext, useState, useEffect, useCallback } from "react";
+import React, {
+  createContext,
+  useState,
+  useEffect,
+  useCallback,
+  useRef,
+} from "react";
 
 export const AppContext = createContext();
 
@@ -60,6 +66,8 @@ export const AppContextProvider = ({ children }) => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
 
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [curSlide, setCurSlide] = useState(0);
+  const mentorRef = useRef([]);
 
   const slides = [
     "/img1.jpeg",
@@ -113,6 +121,45 @@ export const AppContextProvider = ({ children }) => {
     },
   ];
 
+  const mentors = [
+    {
+      name: "Zelim",
+      img: "/martial1.png",
+      details: [
+        "BJJ Black belt",
+        "ACB JJ World Champ",
+        "AJP Grand Slam World Cup Winner",
+      ],
+    },
+    {
+      name: "Max",
+      img: "/martial2.png",
+      details: [
+        "BJJ Black belt",
+        "ACB JJ World Champ",
+        "AJP Europe Continental Pro medalist",
+      ],
+    },
+    {
+      name: "Max",
+      img: "/martial2.png",
+      details: [
+        "BJJ Black belt",
+        "ACB JJ World Champ",
+        "AJP Europe Continental Pro medalist",
+      ],
+    },
+    {
+      name: "Max",
+      img: "/martial2.png",
+      details: [
+        "BJJ Black belt",
+        "ACB JJ World Champ",
+        "AJP Europe Continental Pro medalist",
+      ],
+    },
+  ];
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
@@ -133,6 +180,33 @@ export const AppContextProvider = ({ children }) => {
   const goToSlide = useCallback((slideIndex) => {
     setCurrentSlide(slideIndex);
   }, []);
+
+  // Mentor slider logic
+  useEffect(() => {
+    const goToSlideMentors = (slide) => {
+      const isMobile = window.innerWidth <= 768; // Adjust for mobile screen sizes
+      mentorRef.current.forEach((s, i) => {
+        const offset = isMobile ? 100 : 50; // Adjust the offset for mobile view
+        if (slide === i) {
+          s.style.transform = `translateX(0)`;
+        } else {
+          s.style.transform = `translateX(-${offset * (i - slide)}%)`;
+        }
+      });
+    };
+
+    goToSlideMentors(curSlide);
+  }, [curSlide]);
+
+  const nextSlideMentors = useCallback(() => {
+    setCurSlide((prevSlide) => (prevSlide + 1) % mentors.length);
+  }, [mentors.length]);
+
+  const prevSlideMentors = useCallback(() => {
+    setCurSlide(
+      (prevSlide) => (prevSlide - 1 + mentors.length) % mentors.length
+    );
+  }, [mentors.length]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -192,6 +266,12 @@ export const AppContextProvider = ({ children }) => {
         services,
         packages,
         reviewsData,
+        curSlide,
+        setCurSlide,
+        nextSlideMentors,
+        prevSlideMentors,
+        mentors,
+        mentorRef,
       }}
     >
       {children}
