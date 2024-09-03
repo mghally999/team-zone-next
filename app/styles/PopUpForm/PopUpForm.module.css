@@ -80,7 +80,7 @@
 .popupInput {
   width: 100%;
   padding: 1rem;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-family: inherit;
   color: #fff;
   border: none;
@@ -97,7 +97,7 @@
 .popupButton {
   font-family: "Outfit", sans-serif;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.3rem;
   display: block;
   width: 100%;
   padding: 1rem;
