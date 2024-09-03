@@ -1,78 +1,55 @@
-import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
-import styles from '../../styles/ImageSlider/ImageSlider.module.css';
+import React, { useContext } from "react";
+import Image from "next/image";
+import { AppContext } from "../../context/AppContext";
+import styles from "../../styles/ImageSlider/ImageSlider.module.css";
 
 const ImageSlider = () => {
-    const [currentSlide, setCurrentSlide] = useState(0);
-    const slides = [
-        "/img1.jpeg",
-        "/img2.jpeg",
-        "/img3.jpeg",
-        "/img1.jpeg",
-        "/img2.jpeg",
-        "/img3.jpeg",
-    ];
+  const { currentSlide, nextSlide, prevSlide, goToSlide, slides } =
+    useContext(AppContext);
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-        }, 3000);
-        return () => clearInterval(interval);
-    }, [slides.length]);
-
-    const nextSlide = () => {
-        setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-    };
-
-    const prevSlide = () => {
-        setCurrentSlide((prevSlide) =>
-            (prevSlide - 1 + slides.length) % slides.length
-        );
-    };
-
-    const goToSlide = (slideIndex) => {
-        setCurrentSlide(slideIndex);
-    };
-
-    return (
-        <div className={styles.slider}>
-            <div className={styles.slides}>
-                {slides.map((slide, index) => (
-                    <div
-                        key={index}
-                        className={`${styles.slide} ${index === currentSlide ? styles.active : ""}`}
-                        style={{
-                            transform: `translateX(-${currentSlide * 100}%)`,
-                            transition: 'transform 1s ease-in-out',
-                        }}
-                    >
-                        <Image
-                            src={slide}
-                            alt={`Slide ${index}`}
-                            layout="fill"
-                            objectFit="cover"
-                            priority
-                        />
-                    </div>
-                ))}
-            </div>
-            <button onClick={prevSlide} className={styles.prevBtn}>
-                &larr;
-            </button>
-            <button onClick={nextSlide} className={styles.nextBtn}>
-                &rarr;
-            </button>
-            <div className={styles.dots}>
-                {slides.map((_, index) => (
-                    <span
-                        key={index}
-                        className={`${styles.dot} ${index === currentSlide ? styles.active : ""}`}
-                        onClick={() => goToSlide(index)}
-                    ></span>
-                ))}
-            </div>
-        </div>
-    );
+  return (
+    <div className={styles.slider}>
+      <div
+        className={styles.slides}
+        style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+      >
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`${styles.slide} ${
+              index === currentSlide ? styles.active : ""
+            }`}
+          >
+            <Image
+              src={slide}
+              alt={`Slide ${index}`}
+              priority
+              width={1920}
+              height={1080}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          </div>
+        ))}
+      </div>
+      <button onClick={prevSlide} className={styles.prevBtn}>
+        &larr;
+      </button>
+      <button onClick={nextSlide} className={styles.nextBtn}>
+        &rarr;
+      </button>
+      <div className={styles.dots}>
+        {slides.map((_, index) => (
+          <span
+            key={index}
+            className={`${styles.dot} ${
+              index === currentSlide ? styles.active : ""
+            }`}
+            onClick={() => goToSlide(index)}
+          ></span>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default ImageSlider;

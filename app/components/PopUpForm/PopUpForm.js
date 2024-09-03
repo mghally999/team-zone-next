@@ -31,7 +31,6 @@ export default function PopupForm({ show, onClose }) {
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevents the default form submission
 
-    // Trimming spaces and capitalizing the first letter of gender
     const formattedData = {
       name: formData.name.trim(),
       email: formData.email.trim(),

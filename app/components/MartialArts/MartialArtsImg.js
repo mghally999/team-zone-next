@@ -8,7 +8,7 @@ export default function MartialArtsImg() {
             <Image
                 src="/img3.jpeg"
                 alt="Martial Arts"
-                layout="responsive"
+                responsive="true"
                 width={500}
                 height={300}
                 className={styles.martialImg}

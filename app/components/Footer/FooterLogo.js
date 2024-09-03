@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../../styles/Footer/FooterLogo.module.css';
-import { LogoInstagram } from 'react-ionicons';
+import { IoLogoInstagram, IoLogoWhatsapp } from 'react-icons/io';
 
 const FooterLogo = () => {
     return (
@@ -15,11 +15,7 @@ const FooterLogo = () => {
             <ul className={styles.socialLinks}>
                 <li>
                     <a className={styles.footerLink} href="https://www.instagram.com/team_zone10/" target="_blank" rel="noopener noreferrer">
-                        <LogoInstagram
-                            color={'#fff'}
-                            height="24px"
-                            width="24px"
-                        />
+                        <IoLogoInstagram color="#fff" size="24px" />
                     </a>
                 </li>
             </ul>

@@ -46,7 +46,7 @@ export default function MentorSlider() {
     };
 
     return (
-        <section className={styles.sectionMentor} id="mentor-slider">
+        <section className={styles.sectionMentor}>
             <div className={styles.container}>
                 <h2 className={styles.headingSecondaryCoaches}>
                     THE MAIN CHARACTERISTIC OF <span>MENTORS</span> IS THE COMBINATION OF <span>A SPORTS COACH</span>,

@@ -5,7 +5,7 @@ import FooterContact from './FooterContact';
 import FooterNav from './FooterNav';
 import WhatsAppButton from './WhatsAppButton';
 
-const Footer = () => {
+export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={`${styles.container} ${styles.gridFooter}`}>
@@ -18,4 +18,3 @@ const Footer = () => {
   );
 };
 
-export default Footer;

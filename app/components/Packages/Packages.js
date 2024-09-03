@@ -1,20 +1,18 @@
-import React, { useState } from 'react';
-import styles from '../../styles/Packages/Packages.module.css';
-import PackagesText from './PackagesText';
-import PackagesContainer from './PackagesContainer';
+import React, { useContext } from "react";
+import styles from "../../styles/Packages/Packages.module.css";
+import PackagesText from "./PackagesText";
+import PackagesContainer from "./PackagesContainer";
 import PopupForm from "../PopUpForm/PopUpForm";
+import { AppContext } from "../../context/AppContext";
 
 export default function Packages() {
-    const [isPopupVisible, setPopupVisible] = useState(false);
+  const { isPopupVisible, openPopup, closePopup } = useContext(AppContext);
 
-    const openPopup = () => setPopupVisible(true);
-    const closePopup = () => setPopupVisible(false);
-
-    return (
-        <section className={styles.sectionPackages}>
-            <PackagesText />
-            <PackagesContainer openPopup={openPopup} />
-            <PopupForm show={isPopupVisible} onClose={closePopup} />
-        </section>
-    );
+  return (
+    <section className={styles.sectionPackages}>
+      <PackagesText />
+      <PackagesContainer openPopup={openPopup} />
+      <PopupForm show={isPopupVisible} onClose={closePopup} />
+    </section>
+  );
 }
