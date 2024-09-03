@@ -32,7 +32,7 @@
   padding: 2rem;
   z-index: 101;
   max-width: 90%;
-  width: 400px;
+  width: 500px;
   border-radius: 10px;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
   animation: popupFadeIn 0.3s forwards;
