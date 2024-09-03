@@ -1,4 +1,54 @@
+@import url("https://unpkg.com/ionicons@5.5.2/dist/css/ionicons.min.css");
+
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
 /* Outfit */
+@font-face {
+  font-family: "Outfit";
+  src: url("/fonts/Outfit/static/Outfit-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("/fonts/Outfit/static/Outfit-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("/fonts/Outfit/static/Outfit-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("/fonts/Outfit/static/Outfit-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("/fonts/Outfit/static/Outfit-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("/fonts/Outfit/static/Outfit-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
 
 @font-face {
   font-family: "Outfit";
@@ -7,7 +57,27 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Outfit";
+  src: url("/fonts/Outfit/static/Outfit-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("/fonts/Outfit/static/Outfit-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
 /* Oswald */
+@font-face {
+  font-family: "Oswald";
+  src: url("/fonts/Oswald/static/Oswald-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
 
 @font-face {
   font-family: "Oswald";

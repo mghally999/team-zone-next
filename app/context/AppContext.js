@@ -13,43 +13,91 @@ export const AppContext = createContext();
 const content = [
   {
     label: "Kids Jiu-Jitsu Class (Ages 2-3)",
-    description:
-      "Our Jiu-Jitsu class for toddlers is designed to introduce young children to the fundamentals of balance, mobility, and agility through playful and engaging activities. This class focuses on fostering motor skills and coordination in a fun, supportive environment. With age-appropriate exercises and games, children will develop their physical abilities while enjoying the social and interactive aspects of jiu-jitsu. Join us to give your child a head start in building essential movement skills and confidence!",
+    sentence:
+      "Introduce toddlers to balance and agility through fun, engaging activities that build motor skills and confidence.",
+    list: [
+      "Focus: Balance and Mobility",
+      "Activities: Playful Games",
+      "Skills: Motor Development",
+      "Environment: Supportive and Fun",
+    ],
   },
   {
     label: "Kids Jiu-Jitsu Class (Ages 4-6)",
-    description:
-      "In our 4-6 year-old class, children build strength, balance, and power while developing self-confidence and courage through fun jiu-jitsu activities. We focus on essential skills to help them handle bullying and prepare them for the next level of jiu-jitsu classes. This program supports a smooth transition to more advanced training while promoting athleticism and personal growth.",
+    sentence:
+      "Build strength and confidence with fun jiu-jitsu activities. Prepares kids for bullying and future training.",
+    list: [
+      "Focus: Strength and Confidence",
+      "Activities: Fun Drills",
+      "Skills: Bullying Prevention",
+      "Progression: Ready for Advanced Classes",
+    ],
   },
   {
     label: "Kids Jiu-Jitsu Class (Ages 7-10)",
-    description:
-      "Our 7-10 year-old class focuses on building self-confidence, managing bullying, and enhancing self-control. With an emphasis on advanced jiu-jitsu techniques, kids become athletic and skilled fighters. This class helps them refine their jiu-jitsu abilities, preparing them to excel in their practice and develop into confident, effective practitioners.",
+    sentence:
+      "Enhance self-confidence and skills with advanced techniques. Prepares kids for future growth in jiu-jitsu.",
+    list: [
+      "Focus: Confidence and Control",
+      "Techniques: Advanced Skills",
+      "Development: Athleticism",
+      "Goal: Skillful and Confident",
+    ],
   },
   {
-    label: "Teens Jiu-Jitsu Class (Ages 11-15)",
-    description:
-      "Our 11-15 year-old class supports teenagers in their self-improvement journey through focused jiu-jitsu training. They learn advanced techniques to become efficient fighters while gaining valuable self-defense skills. This class fosters personal growth and discipline, helping them navigate early adolescence with confidence and resilience.",
+    label: "Teen Jiu-Jitsu Class (Ages 11-15)",
+    sentence:
+      "Teens learn advanced techniques and self-defense, gaining confidence and discipline for personal growth.",
+    list: [
+      "Focus: Advanced Techniques",
+      "Skills: Self-Defense and Discipline",
+      "Benefits: Confidence and Growth",
+      "Training: Adolescent Development",
+    ],
   },
   {
     label: "White Belt Intro Class",
-    description:
-      "Our White Belt Intro Class is designed for beginners aged 11 and up, offering a free introduction to jiu-jitsu. We cover essential basics with a focus on safety and guide new students through fundamental techniques. This class helps newcomers smoothly transition into our group classes and is perfect for those who are new to jiu-jitsu.",
+    sentence:
+      "Free class for beginners 11+, covering basics and safety to help transition to regular classes.",
+    list: [
+      "Focus: Basic Techniques",
+      "Audience: Beginners 11+",
+      "Purpose: Smooth Transition",
+      "Introduction: Free Class",
+    ],
   },
   {
     label: "Beginners Jiu-Jitsu Class",
-    description:
-      "Our Beginners Jiu-Jitsu Class focuses on core principles and fundamental techniques, guiding newcomers through essential skills. After completing the White Belt Intro Class, students safely transition into this class, where they build a solid foundation and prepare for more advanced training. This class is designed to ensure a smooth progression from basic to advanced jiu-jitsu.",
+    sentence:
+      "Build a solid foundation with core techniques. For those transitioning from White Belt Intro.",
+    list: [
+      "Focus: Core Principles",
+      "Audience: Post-Intro Students",
+      "Goal: Prepare for Advanced Training",
+      "Progression: Build Foundation",
+    ],
   },
   {
     label: "Advanced Jiu-Jitsu Class",
-    description:
-      "Our Advanced Jiu-Jitsu Class is designed for experienced practitioners who are comfortable training at a higher level. This class features mixed belt levels and focuses on advanced techniques with a more intense training environment. It is ideal for those who have a solid foundation and are ready to push their skills further.",
+    sentence:
+      "For experienced practitioners, focusing on advanced techniques in an intense training environment.",
+    list: [
+      "Focus: Advanced Techniques",
+      "Environment: Intense",
+      "Audience: Experienced Practitioners",
+      "Goal: Skill Advancement",
+    ],
   },
   {
     label: "Competition Class",
-    description:
-      "Our Competition Class, held twice a week, is led by champion coaches and focuses on preparing athletes for competitive events. This class offers valuable training and experience, even for those who don’t compete, providing an opportunity to immerse in the competitive environment and enhance skills.",
+    sentence:
+      "Prepare for competitions with champion coaches. Valuable experience for all, enhancing competitive skills.",
+    list: [
+      "Focus: Competition Prep",
+      "Frequency: Twice a Week",
+      "Coaches: Champion-Level",
+      "Benefits: Enhanced Skills",
+    ],
   },
 ];
 
