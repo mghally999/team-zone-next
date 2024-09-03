@@ -199,6 +199,15 @@ export const AppContextProvider = ({ children }) => {
     },
   ];
 
+  const students = [
+    { imgSrc: "/customers/customer-1.jpg", altText: "Customer photo 1" },
+    { imgSrc: "/customers/customer-2.jpg", altText: "Customer photo 2" },
+    { imgSrc: "/customers/customer-3.jpg", altText: "Customer photo 3" },
+    { imgSrc: "/customers/customer-4.jpg", altText: "Customer photo 4" },
+    { imgSrc: "/customers/customer-5.jpg", altText: "Customer photo 5" },
+    { imgSrc: "/customers/customer-6.jpg", altText: "Customer photo 6" },
+  ];
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
@@ -288,6 +297,7 @@ export const AppContextProvider = ({ children }) => {
   return (
     <AppContext.Provider
       value={{
+        students,
         content,
         currentTab,
         setCurrentTab,

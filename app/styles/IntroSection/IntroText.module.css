@@ -1,6 +1,3 @@
-.introTextBox {
-}
-
 .headingPrimaryIntro {
   font-family: "Outfit", sans-serif;
   font-weight: 800;
@@ -37,9 +34,9 @@
   font-family: "Oswald", sans-serif;
   display: inline-block;
   text-decoration: none;
-  font-size: 2.3rem;
+  font-size: 2.4rem;
   font-weight: 600;
-  padding: 1.6rem 3.2rem;
+  padding: 1.1rem 4.2rem;
   border-radius: 9px;
   border: none;
   cursor: pointer;
