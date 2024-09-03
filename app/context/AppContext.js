@@ -189,16 +189,7 @@ export const AppContextProvider = ({ children }) => {
       ],
     },
     {
-      name: "Max",
-      img: "/martial2.png",
-      details: [
-        "BJJ Black belt",
-        "ACB JJ World Champ",
-        "AJP Europe Continental Pro medalist",
-      ],
-    },
-    {
-      name: "Max",
+      name: "Muslim",
       img: "/martial2.png",
       details: [
         "BJJ Black belt",
@@ -228,31 +219,31 @@ export const AppContextProvider = ({ children }) => {
   const goToSlide = useCallback((slideIndex) => {
     setCurrentSlide(slideIndex);
   }, []);
-
-  // Mentor slider logic
   useEffect(() => {
-    const goToSlideMentors = (slide) => {
-      const isMobile = window.innerWidth <= 768; // Adjust for mobile screen sizes
-      mentorRef.current.forEach((s, i) => {
-        const offset = isMobile ? 100 : 50; // Adjust the offset for mobile view
-        if (slide === i) {
-          s.style.transform = `translateX(0)`;
-        } else {
-          s.style.transform = `translateX(-${offset * (i - slide)}%)`;
-        }
-      });
-    };
+    const isMobile = window.innerWidth <= 768;
+    const slideWidth = isMobile ? 100 : 50; // 100% width for mobile, 50% width for desktop
 
-    goToSlideMentors(curSlide);
-  }, [curSlide]);
+    // Set the translation for each mentor card based on the current slide
+    mentorRef.current.forEach((s, i) => {
+      const offset = slideWidth * (i - curSlide);
+      s.style.transform = `translateX(${offset}%)`;
+      s.style.display =
+        i >= curSlide && i < curSlide + (isMobile ? 1 : 2) ? "block" : "none";
+    });
+  }, [curSlide, mentors.length]);
 
   const nextSlideMentors = useCallback(() => {
-    setCurSlide((prevSlide) => (prevSlide + 1) % mentors.length);
+    const isMobile = window.innerWidth <= 768;
+    setCurSlide(
+      (prevSlide) => (prevSlide + 1) % (mentors.length - (isMobile ? 0 : 1))
+    );
   }, [mentors.length]);
 
   const prevSlideMentors = useCallback(() => {
+    const isMobile = window.innerWidth <= 768;
     setCurSlide(
-      (prevSlide) => (prevSlide - 1 + mentors.length) % mentors.length
+      (prevSlide) =>
+        (prevSlide - 1 + mentors.length) % (mentors.length - (isMobile ? 0 : 1))
     );
   }, [mentors.length]);
 
