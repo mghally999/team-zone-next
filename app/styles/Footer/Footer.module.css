@@ -5,6 +5,12 @@
   border-bottom: 1px solid #ff011f;
 }
 
+@media (max-width: 59em) {
+  .footer {
+    text-align: center;
+  }
+}
+
 .container {
   max-width: 120rem;
   padding: 0 3.2rem;
@@ -17,4 +23,11 @@
   column-gap: 6rem;
   align-items: center;
   row-gap: 9.6rem;
+}
+
+@media (max-width: 59em) {
+  .gridFooter {
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+  }
 }
