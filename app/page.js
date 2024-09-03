@@ -1,20 +1,18 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Header from "./components/Header/Header";
 import { IntroSection } from "./components/IntroSection";
-import Programs from "./components/Programs/Programs";
+import { Programs } from "./components/Programs";
 import SportsExperience from "./components/SportsExperience/SportsExperience";
 import { MartialArts } from "./components/MartialArts";
 import ImageSlider from "./components/ImageSlider/ImageSlider";
-import ClassBooking from "./components/ClassBooking/ClassBooking";
-import RibbonContainer1 from "./components/RibbonContainer1/RibbonContainer1";
-import RibbonContainer2 from "./components/RibbonContainer2/RibbonContainer2";
-import Packages from "./components/Packages/Packages";
-import ClientsReviews from "./components/ClientsReviews/ClientsReviews";
+import { ClassBooking } from "./components/ClassBooking";
+import Ribbon from "./components/Ribbon/Ribbon";
+import { Packages } from "./components/Packages";
+import { ClientsReviews } from "./components/ClientsReviews";
 import MentorSlider from "./components/MentorSlider/MentorSlider";
-import Footer from "./components/Footer/Footer";
-
+import { Footer } from "./components/Footer";
 
 export default function HomePage() {
   return (
@@ -27,9 +25,12 @@ export default function HomePage() {
         <MartialArts />
         <ImageSlider />
         <ClassBooking />
-        <RibbonContainer1 />
+        <Ribbon skills={["WORLD CHAMPION"]} repetitionCount={9} />
         <Packages />
-        <RibbonContainer2 />
+        <Ribbon
+          skills={["FUNCTIONAL TRAINING", "BJJ", "BOXING"]}
+          repetitionCount={5}
+        />
         <ClientsReviews />
         <MentorSlider />
         <Footer />

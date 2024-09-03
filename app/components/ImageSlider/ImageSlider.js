@@ -3,7 +3,7 @@ import Image from "next/image";
 import { AppContext } from "../../context/AppContext";
 import styles from "../../styles/ImageSlider/ImageSlider.module.css";
 
-const ImageSlider = () => {
+export default function ImageSlider() {
   const { currentSlide, nextSlide, prevSlide, goToSlide, slides } =
     useContext(AppContext);
 
@@ -50,6 +50,4 @@ const ImageSlider = () => {
       </div>
     </div>
   );
-};
-
-export default ImageSlider;
+}

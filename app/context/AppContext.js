@@ -48,7 +48,6 @@ const content = [
 ];
 
 export const AppContextProvider = ({ children }) => {
-  // Existing form and popup states
   const [currentTab, setCurrentTab] = useState(0);
   const [formData, setFormData] = useState({
     name: "",
@@ -61,6 +60,7 @@ export const AppContextProvider = ({ children }) => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
 
   const [currentSlide, setCurrentSlide] = useState(0);
+
   const slides = [
     "/img1.jpeg",
     "/img2.jpeg",
@@ -68,6 +68,49 @@ export const AppContextProvider = ({ children }) => {
     "/img1.jpeg",
     "/img2.jpeg",
     "/img3.jpeg",
+  ];
+
+  const services = ["BJJ", "Grappling", "Boxing"];
+
+  const packages = [
+    {
+      imgClass: "packageImg1",
+      title: "Monthly Package",
+      duration: "1 Month",
+    },
+    {
+      imgClass: "packageImg2",
+      title: "3-Month Package",
+      duration: "3 Months",
+    },
+    {
+      imgClass: "packageImg3",
+      title: "Annual Package",
+      duration: "1 Year",
+    },
+  ];
+
+  const reviewsData = [
+    {
+      name: "Mike Schulz",
+      stars: "⭐⭐⭐⭐⭐",
+      text: "Both our boys attend jiu-jitsu at this gym. The coaches are professional and have a great way with the kids. Our boys enjoy going and have progressed quickly. The atmosphere is welcoming, and the training is top-notch.",
+    },
+    {
+      name: "Gordinho Da Br",
+      stars: "⭐⭐⭐⭐⭐",
+      text: "The best gym to train jiu-jitsu in Dubai, family and cozy atmosphere, good for beginners and many technical training for black belts.",
+    },
+    {
+      name: "Masoud Hesabian",
+      stars: "⭐⭐⭐⭐⭐",
+      text: "I had a great session! Learned so much in one hour but mostly the service was amazing. If you are a beginner and want to learn more about jiu-jitsu, I definitely recommend this gym.",
+    },
+    {
+      name: "Collab giorgiacapa",
+      stars: "⭐⭐⭐⭐⭐",
+      text: "I love this gym! Good vibes, great people, and top jiu-jitsu!",
+    },
   ];
 
   useEffect(() => {
@@ -146,6 +189,9 @@ export const AppContextProvider = ({ children }) => {
         prevSlide,
         goToSlide,
         slides,
+        services,
+        packages,
+        reviewsData,
       }}
     >
       {children}
