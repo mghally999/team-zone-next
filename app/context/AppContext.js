@@ -144,6 +144,11 @@ export const AppContextProvider = ({ children }) => {
       title: "Annual Package",
       duration: "1 Year",
     },
+    {
+      imgClass: "packageImg3",
+      title: "Family Workshop",
+      duration: "6 Months",
+    },
   ];
 
   const reviewsData = [
