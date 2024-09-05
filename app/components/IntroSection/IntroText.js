@@ -19,9 +19,8 @@ export default function IntroText() {
         Your Hub For Transformation
       </h1>
       <p className={styles.heroDescription}>
-        Building minds and bodies Physical and mental growth for kids Discpline
-        and strong mindset for kids and adults Master martial arts by the hands
-        of veteran trainers
+        More than a sports academy, we are a community dedicated to your growth
+        and development.
       </p>
       <button className={bookingButton} onClick={openPopup}>
         Start Today

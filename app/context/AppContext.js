@@ -132,7 +132,7 @@ export const AppContextProvider = ({ children }) => {
     {
       imgClass: "packageImg1",
       title: "Monthly Package",
-      duration: "1 Month",
+      duration: "Monthly",
     },
     {
       imgClass: "packageImg2",
@@ -142,12 +142,12 @@ export const AppContextProvider = ({ children }) => {
     {
       imgClass: "packageImg3",
       title: "Annual Package",
-      duration: "1 Year",
+      duration: "Yearly",
     },
     {
       imgClass: "packageImg3",
-      title: "Family Workshop",
-      duration: "6 Months",
+      title: "Family Packages",
+      // duration: "6 Months",
     },
   ];
 

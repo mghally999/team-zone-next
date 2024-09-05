@@ -2,7 +2,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 4.8rem 3.2rem 9.6rem 3.2rem;
+  padding: 4.8rem;
   background-image: url(/team-favicon.png);
   background-repeat: no-repeat;
   background-size: 9%;
@@ -17,10 +17,11 @@
 }
 
 .headingPrimaryMartial {
-  font-size: 5.2rem;
-  line-height: 1.9;
-  letter-spacing: 1px;
-  margin-bottom: 3.2rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 4.4rem;
+  line-height: 1.05;
+  margin-bottom: 3rem;
   color: #000;
 }
 
@@ -38,17 +39,11 @@
 }
 
 .headingPrimaryMartialTwo {
-  font-size: 3.6rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 4.4rem;
   margin-top: 5rem;
   line-height: 1.05;
   margin-bottom: 3rem;
   color: #000;
-}
-
-@media (max-width: 59em) {
-  .headingPrimaryMartial span {
-    display: inline-block;
-    font-size: 2.9rem;
-    margin: 0 auto;
-  }
 }

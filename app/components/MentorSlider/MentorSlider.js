@@ -12,9 +12,7 @@ export default function MentorSlider() {
     <section className={styles.sectionMentor}>
       <div className={styles.container}>
         <h2 className={styles.headingSecondaryCoaches}>
-          THE MAIN CHARACTERISTIC OF <span>MENTORS</span> IS THE COMBINATION OF{" "}
-          A <span>SPORTS COACH</span>, A <span>PARENT</span>, AND A{" "}
-          <span>PEER</span> IN ONE PERSON.
+          Meet Our Expert Trainers
         </h2>
       </div>
 
@@ -25,7 +23,7 @@ export default function MentorSlider() {
             ref={(el) => (mentorRef.current[index] = el)}
             className={styles.mentorCard}
             style={{
-              transform: `translateX(-${curSlide * 100}%)` /* Updated logic */,
+              transform: `translateX(-${curSlide * 100}%)`,
             }}
           >
             <div

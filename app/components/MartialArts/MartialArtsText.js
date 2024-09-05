@@ -6,11 +6,11 @@ export default function MartialArtsText() {
   return (
     <div className={styles.martialArtsBox}>
       <h1 className={styles.headingPrimaryMartial}>
-        MARTIAL ARTS FOR ADULTS <br />
-        <span>UNLEASH YOUR INNER WARRIOR</span>
+        Our Various programs are designed to transform both your physical and
+        mental well-being.
       </h1>
       <h1 className={styles.headingPrimaryMartialTwo}>
-        MASTER MARTIAL ARTS WITH THE BEST TRAINERS: <br />
+        Shape your child’s future through Team Zone 10’s development program:
       </h1>
       <ServicesContainer />
     </div>
