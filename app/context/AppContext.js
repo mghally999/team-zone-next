@@ -147,7 +147,7 @@ export const AppContextProvider = ({ children }) => {
     {
       imgClass: "packageImg3",
       title: "Family Packages",
-      // duration: "6 Months",
+      duration: "6 Months",
     },
   ];
 
