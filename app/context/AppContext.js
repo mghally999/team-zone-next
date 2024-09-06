@@ -132,22 +132,22 @@ export const AppContextProvider = ({ children }) => {
     {
       imgClass: "packageImg1",
       title: "Monthly Package",
-      duration: "Monthly",
+      duration: "Quick Gains",
     },
     {
       imgClass: "packageImg2",
       title: "3-Month Package",
-      duration: "3 Months",
+      duration: "Best Starter Deal",
     },
     {
       imgClass: "packageImg3",
       title: "Annual Package",
-      duration: "Yearly",
+      duration: "Save 25% Annually",
     },
     {
       imgClass: "packageImg3",
       title: "Family Packages",
-      duration: "6 Months",
+      duration: "Limited Slots",
     },
   ];
 
