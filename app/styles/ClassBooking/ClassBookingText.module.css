@@ -3,6 +3,13 @@
   border-radius: 20px;
 }
 
+@media (max-width: 34em) {
+  .bookingTextBox {
+    padding: 0 3.2rem;
+    margin-bottom: 4.8rem;
+  }
+}
+
 .bookingHeading {
   font-family: "Outfit", sans-serif;
   font-weight: 700;

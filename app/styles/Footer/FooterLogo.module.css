@@ -18,6 +18,13 @@
   margin-top: 1rem;
 }
 
+@media (max-width: 34em) {
+  .copyright {
+    margin-top: 4.8rem;
+    font-size: 1.7rem;
+  }
+}
+
 .socialLinks {
   display: flex;
   gap: 2.4rem;

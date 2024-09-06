@@ -72,6 +72,12 @@
   text-transform: uppercase;
 }
 
+@media (max-width: 34em) {
+  .ageBadge {
+    font-size: 12px;
+  }
+}
+
 .packageTags {
   margin-top: auto;
 }

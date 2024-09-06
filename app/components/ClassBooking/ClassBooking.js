@@ -2,7 +2,6 @@ import React from "react";
 import styles from "../../styles/ClassBooking/ClassBooking.module.css";
 import ClassBookingText from "./ClassBookingText";
 import ClassBookingForm from "./ClassBookingForm";
-import Image from "next/image";
 
 export default function ClassBooking() {
   return (
