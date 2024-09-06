@@ -5,9 +5,11 @@ import PopupForm from "../PopUpForm/PopUpForm";
 import classNames from "classnames";
 import styles from "../../styles/Programs/Programs.module.css";
 import { AppContext } from "../../context/AppContext";
+import Image from "next/image";
 
 export default function Programs() {
-  const { isPopupVisible, openPopup, closePopup } = useContext(AppContext);
+  const { isPopupVisible, openPopup, closePopup, content, currentTab } =
+    useContext(AppContext);
 
   const bookingButton = classNames(
     styles.btn,
@@ -28,7 +30,14 @@ export default function Programs() {
           </button>
         </div>
         <div className={styles.heroImgBox}>
-          <div className={styles.imagePlaceholder}>[Photo Placeholder]</div>
+          <Image
+            src={content[currentTab].img}
+            alt={content[currentTab].label}
+            width={754} // Or any custom width
+            height={400} // Or any custom height
+            objectFit="cover" // Keeps the image scaled properly
+            className={styles.imagePlaceholder}
+          />
           <TabContent />
         </div>
       </div>

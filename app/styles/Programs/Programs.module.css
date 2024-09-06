@@ -104,10 +104,14 @@
 }
 
 .imagePlaceholder {
-  width: 100%;
-  height: 350px;
+  width: 100% !important;
+  height: 420px !important; /* This can be adjusted as needed */
   margin-bottom: 1.4rem;
   background-color: #ccc;
+  position: inset !important; /* Ensure positioning is set for child elements */
+  overflow: hidden; /* Hide any part of the image that overflows the container */
+  object-fit: cover;
+  object-position: center;
 }
 
 @media (max-width: 59em) {

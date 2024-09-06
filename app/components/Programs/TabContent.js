@@ -2,12 +2,13 @@ import React, { useContext } from "react";
 import { AppContext } from "../../context/AppContext";
 import styles from "../../styles/Programs/TabContent.module.css";
 
-const TabContent = () => {
+export default function TabContent() {
   const { content, currentTab } = useContext(AppContext);
+  const currentContent = content[currentTab]; // Get the current tab's content
 
   return (
     <div className={styles.tabContent}>
-      <p>{content[currentTab].sentence}</p>
+      <p>{currentContent.sentence}</p>
       <ul>
         {content[currentTab].list.map((item, i) => (
           <li key={i}>{item}</li>
@@ -15,6 +16,4 @@ const TabContent = () => {
       </ul>
     </div>
   );
-};
-
-export default TabContent;
+}

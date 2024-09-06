@@ -21,6 +21,7 @@ const content = [
       "Skills: Motor Development",
       "Environment: Supportive and Fun",
     ],
+    img: "/kids23.JPG",
   },
   {
     label: "Kids Jiu-Jitsu Class (Ages 4-6)",
@@ -32,6 +33,7 @@ const content = [
       "Skills: Bullying Prevention",
       "Progression: Ready for Advanced Classes",
     ],
+    img: "/kids46.JPG",
   },
   {
     label: "Kids Jiu-Jitsu Class (Ages 7-10)",
@@ -65,6 +67,7 @@ const content = [
       "Purpose: Smooth Transition",
       "Introduction: Free Class",
     ],
+    img: "/whiteBelt.JPG",
   },
   {
     label: "Beginners Jiu-Jitsu Class",
@@ -76,6 +79,7 @@ const content = [
       "Goal: Prepare for Advanced Training",
       "Progression: Build Foundation",
     ],
+    img: "/whiteBelt.JPG",
   },
   {
     label: "Advanced Jiu-Jitsu Class",
