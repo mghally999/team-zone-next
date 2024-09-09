@@ -20,7 +20,7 @@
   align-items: center;
   max-width: 124rem;
   margin: 0 auto;
-  gap: 29rem;
+  gap: 24rem;
   padding: 0 3.2rem;
   grid-template-rows: 1fr 1fr;
 }
@@ -28,20 +28,6 @@
 @media (max-width: 84em) {
   .intro {
     max-width: 120rem;
-  }
-}
-
-@media (max-width: 75em) {
-  .intro {
-    gap: 4.8rem;
-  }
-}
-
-@media (max-width: 59em) {
-  .intro {
-    grid-template-columns: 1fr;
-    padding: 0 8rem;
-    gap: 60rem;
   }
 }
 

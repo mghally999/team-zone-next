@@ -60,12 +60,6 @@
   }
 }
 
-@media (max-width: 59em) {
-  .introTextBox {
-    text-align: center;
-  }
-}
-
 .btn {
   font-family: "Oswald", sans-serif;
   display: inline-block;
