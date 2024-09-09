@@ -48,10 +48,10 @@
 @media (max-width: 34em) {
   .intro {
     grid-template-columns: 1fr;
-    grid-template-rows: 1.2fr 1fr;
+    grid-template-rows: 1fr 1fr;
     justify-content: center;
     padding: 0 3.2rem;
-    gap: 0rem;
+    gap: 3rem;
   }
 }
 
