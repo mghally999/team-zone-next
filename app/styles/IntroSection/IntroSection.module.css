@@ -12,6 +12,12 @@
   justify-content: flex-end;
 }
 
+@media (max-width: 34em) {
+  .sectionIntro {
+    padding: 1.6rem 0 2.3rem 0;
+  }
+}
+
 .intro {
   display: grid;
   grid-template-columns: 1fr;
