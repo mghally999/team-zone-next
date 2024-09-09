@@ -23,6 +23,12 @@
   }
 }
 
+@media (max-width: 34em) {
+  .button {
+    font-size: 1.6rem;
+  }
+}
+
 .button:hover {
   color: #ffffff;
   background-color: #ff011f;

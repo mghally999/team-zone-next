@@ -137,6 +137,18 @@
   }
 }
 
+@media (max-width: 34em) {
+  .mentorName {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .mentorDetails li {
+    font-size: 2rem;
+  }
+}
+
 .sliderBtnMentor {
   position: absolute;
   top: 50%;

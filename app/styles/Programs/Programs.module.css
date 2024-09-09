@@ -50,7 +50,7 @@
 
 @media (max-width: 75em) {
   .programs {
-    gap: 4.8rem;
+    gap: 2rem;
   }
 }
 
@@ -84,6 +84,13 @@
 @media (max-width: 84em) {
   .headingPrimaryPrograms {
     font-size: 4rem;
+    margin: 0 auto 1rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .headingPrimaryPrograms {
+    font-size: 3rem;
   }
 }
 
@@ -126,6 +133,12 @@
   }
 }
 
+@media (max-width: 34em) {
+  .imagePlaceholder {
+    height: 200px;
+  }
+}
+
 .btn {
   font-family: "Oswald", sans-serif;
   display: inline-block;
@@ -146,6 +159,12 @@
     margin-top: 2rem;
     width: 100%;
     margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 34em) {
+  .btn {
+    font-size: 2rem;
   }
 }
 
