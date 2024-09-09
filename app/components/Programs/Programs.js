@@ -20,7 +20,7 @@ export default function Programs() {
   return (
     <section className={styles.sectionPrograms}>
       <h1 className={styles.headingPrimaryPrograms}>
-        ADAPTIVE PROGRAM FOR ALL AGES
+        TAILORED PROGRAM FOR EVERY AGE
       </h1>
       <div className={styles.programs}>
         <div className={styles.heroTextBox2nd}>

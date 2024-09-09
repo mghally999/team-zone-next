@@ -118,7 +118,7 @@
 
 .imagePlaceholder {
   width: 100%;
-  height: 420px; /* This can be adjusted as needed */
+  height: 380px; /* This can be adjusted as needed */
   margin-bottom: 1.4rem;
   background-color: #ccc;
   position: inset; /* Ensure positioning is set for child elements */

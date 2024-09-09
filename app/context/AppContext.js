@@ -92,6 +92,7 @@ const content = [
       "Audience: Experienced Practitioners",
       "Goal: Skill Advancement",
     ],
+    img: "/advanced.jpeg",
   },
   {
     label: "Competition Class",
@@ -103,6 +104,7 @@ const content = [
       "Coaches: Champion-Level",
       "Benefits: Enhanced Skills",
     ],
+    img: "/competition.jpeg",
   },
 ];
 
