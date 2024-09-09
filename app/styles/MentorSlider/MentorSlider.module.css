@@ -15,7 +15,7 @@
 
 @media (max-width: 84em) {
   .headingSecondaryCoaches {
-    font-size: 3.4rem;
+    font-size: 4.4rem;
   }
 }
 
@@ -41,15 +41,27 @@
   display: flex;
   gap: 3rem;
   overflow: hidden;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (max-width: 59em) {
+  .mentorContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 .mentorCard {
-  background-color: #000000;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  flex-shrink: 0;
-  width: calc(100% / 2 - 1.5rem);
+  overflow: hidden;
   transition: transform 0.8s ease-in-out;
+  height: 904px;
+}
+
+@media (max-width: 59em) {
+  .mentorCard {
+    padding: 0 3.2rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -58,39 +70,71 @@
   }
 }
 .mentorImg {
-  position: relative; /* Important for next/image component */
+  position: relative;
   height: 700px;
+  width: 464.227px;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  border-radius: 10px 10px 0 0;
-  border-right: 1px solid #ff011f;
-  border-top: 1px solid #ff011f;
+  background-position: 50% 51%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+@media (max-width: 59em) {
+  .mentorImg {
+    background-repeat: no-repeat;
+    background-position: 50% 27%;
+    width: 100%;
+  }
 }
 
 .mentorContent {
-  padding: 1.5rem;
+  padding: 2rem 1rem;
   background: #ff011f;
-  border: 2px solid #000000;
+  border: 1px solid #000;
   display: flex;
   justify-content: space-evenly;
-  width: 100.3%;
+  width: 100%;
+  height: 204px;
+  margin: 0 auto;
+  gap: 2rem;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .mentorName {
   color: #000000;
-  font-size: 4rem;
-  line-height: 2;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 59em) {
+  .mentorName {
+    font-size: 3.6rem;
+  }
 }
 
 .mentorDetails {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .mentorDetails li {
-  margin-bottom: 0.5rem;
-  font-size: 1.7rem;
+  margin-bottom: 0.9rem;
+  font-size: 1.8rem;
+  font-weight: 400;
   color: #eeee;
+}
+
+@media (max-width: 59em) {
+  .mentorDetails li {
+    font-size: 2.9rem;
+  }
 }
 
 .sliderBtnMentor {

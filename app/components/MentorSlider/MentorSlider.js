@@ -1,12 +1,9 @@
-import React, { useContext, useRef } from "react";
+import React, { useContext } from "react";
 import styles from "../../styles/MentorSlider/MentorSlider.module.css";
 import { AppContext } from "../../context/AppContext";
 
 export default function MentorSlider() {
-  const { curSlide, nextSlideMentors, prevSlideMentors, mentors } =
-    useContext(AppContext);
-
-  const mentorRef = useRef([]);
+  const { mentors } = useContext(AppContext);
 
   return (
     <section className={styles.sectionMentor}>
@@ -18,14 +15,7 @@ export default function MentorSlider() {
 
       <div className={styles.mentorContainer}>
         {mentors.map((mentor, index) => (
-          <div
-            key={index}
-            ref={(el) => (mentorRef.current[index] = el)}
-            className={styles.mentorCard}
-            style={{
-              transform: `translateX(-${curSlide * 100}%)`,
-            }}
-          >
+          <div key={index} className={styles.mentorCard}>
             <div
               className={styles.mentorImg}
               style={{ backgroundImage: `url(${mentor.img})` }}
@@ -41,19 +31,6 @@ export default function MentorSlider() {
           </div>
         ))}
       </div>
-
-      <button
-        className={`${styles.sliderBtnMentor} ${styles.sliderBtnLeft}`}
-        onClick={prevSlideMentors}
-      >
-        &larr;
-      </button>
-      <button
-        className={`${styles.sliderBtnMentor} ${styles.sliderBtnRight}`}
-        onClick={nextSlideMentors}
-      >
-        &rarr;
-      </button>
     </section>
   );
 }

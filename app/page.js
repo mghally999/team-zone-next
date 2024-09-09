@@ -25,7 +25,6 @@ export default function HomePage() {
         <MartialArts />
         <ImageSlider />
         <ClassBooking />
-        <Ribbon skills={["WORLD CHAMPION"]} repetitionCount={9} />
         <Packages />
         <Ribbon
           skills={["FUNCTIONAL TRAINING", "BJJ", "BOXING"]}

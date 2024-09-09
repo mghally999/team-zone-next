@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   gap: 1.6rem;
-  margin-top: 8rem;
+  margin-top: 2.8rem;
 }
 
 @media (max-width: 59em) {
@@ -18,9 +18,9 @@
 
 .studentsNumbers {
   font-size: 2.3rem;
-  font-weight: 700;
+  font-weight: 800;
   white-space: nowrap;
-  color: #f2fffb;
+  color: #1e1e1e;
 }
 
 .studentsNumbers span {

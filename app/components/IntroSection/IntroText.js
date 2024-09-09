@@ -16,11 +16,11 @@ export default function IntroText() {
   return (
     <div className={styles.introTextBox}>
       <h1 className={styles.headingPrimaryIntro}>
-        Your Hub For Transformation
+        Your Hub For <span>Transformation</span>
       </h1>
       <p className={styles.heroDescription}>
         More than a sports academy, we are a community dedicated to your growth
-        and development.
+        and development
       </p>
       <button className={bookingButton} onClick={openPopup}>
         Start Today

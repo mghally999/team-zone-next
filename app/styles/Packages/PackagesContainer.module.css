@@ -30,7 +30,7 @@
 
 @media (max-width: 59em) {
   .grid3Cols {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 

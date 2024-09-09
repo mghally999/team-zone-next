@@ -24,8 +24,8 @@ export default function ImageSlider() {
               src={slide}
               alt={`Slide ${index}`}
               priority
-              width={1920}
-              height={1080}
+              width={1700}
+              height={778}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
