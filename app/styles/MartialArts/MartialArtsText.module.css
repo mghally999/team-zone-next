@@ -12,7 +12,7 @@
 @media (max-width: 59em) {
   .martialArtsBox {
     font-size: 4.4rem;
-    padding: 4.8rem 3.2rem 0rem 3.2rem;
+    padding: 4.8rem 3.2rem 4.8rem 3.2rem;
   }
 }
 
@@ -41,8 +41,7 @@
 .headingPrimaryMartialTwo {
   font-family: "Outfit", sans-serif;
   font-weight: 700;
-  font-size: 4.4rem;
-  margin-top: 5rem;
+  font-size: 3.8rem;
   line-height: 1.05;
   margin-bottom: 3rem;
   color: #000;
