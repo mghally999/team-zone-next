@@ -142,7 +142,7 @@ export const AppContextProvider = ({ children }) => {
     {
       imgClass: "packageImg1",
       title: "Monthly Package",
-      duration: "Quick Gains",
+      duration: "Ultimate Starter Package",
     },
     {
       imgClass: "packageImg2",
@@ -152,12 +152,12 @@ export const AppContextProvider = ({ children }) => {
     {
       imgClass: "packageImg3",
       title: "Annual Package",
-      duration: "Save 25% Annually",
+      duration: "Your Annual Savings",
     },
     {
       imgClass: "packageImg3",
       title: "Family Packages",
-      duration: "Limited Slots",
+      duration: "Family Savings Plan",
     },
   ];
 
@@ -187,7 +187,7 @@ export const AppContextProvider = ({ children }) => {
   const mentors = [
     {
       name: "Catriel Rodrigues",
-      img: "/catriel.JPG",
+      img: "/trainers/catriel.JPG",
       details: [
         "2x World Pro Champion ",
         "6x Grand Slam AJP",
@@ -199,7 +199,7 @@ export const AppContextProvider = ({ children }) => {
     },
     {
       name: "Ali Abualhaj",
-      img: "/ali.JPG",
+      img: "/trainers/ali.JPG",
       details: [
         "2x World Pro Champion Youth",
         "Vice world pro champion 2021",
@@ -207,8 +207,8 @@ export const AppContextProvider = ({ children }) => {
       ],
     },
     {
-      name: "Muslim",
-      img: "/martial2.png",
+      name: "Eduardo",
+      img: "/trainers/eduardoo.JPG",
       details: [
         "BJJ Black belt",
         "ACB JJ World Champ",

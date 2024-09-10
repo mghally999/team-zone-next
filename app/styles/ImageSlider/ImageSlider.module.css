@@ -8,6 +8,12 @@
   width: 100% !important;
 }
 
+@media (max-width: 34em) {
+  .slider img {
+    height: 260px;
+  }
+}
+
 .slides {
   display: flex;
   transition: transform 0.8s ease-in-out;
@@ -49,7 +55,7 @@
   right: 20px; /* Adjusted positioning */
 }
 
-.dots {
+/* .dots {
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -67,5 +73,5 @@
 }
 
 .dot.active {
-  background-color: #333333; /* Active dot color */
-}
+  background-color: #333333; 
+} */

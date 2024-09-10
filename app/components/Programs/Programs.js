@@ -20,7 +20,7 @@ export default function Programs() {
   return (
     <section className={styles.sectionPrograms}>
       <h1 className={styles.headingPrimaryPrograms}>
-        TAILORED PROGRAM FOR EVERY AGE
+        CUSTOMIZED PROGRAMS FOR ALL AGES
       </h1>
       <div className={styles.programs}>
         <div className={styles.heroTextBox2nd}>
@@ -33,9 +33,9 @@ export default function Programs() {
           <Image
             src={content[currentTab].img}
             alt={content[currentTab].label}
-            width={754} // Or any custom width
-            height={400} // Or any custom height
-            objectFit="cover" // Keeps the image scaled properly
+            width={754}
+            height={400}
+            objectFit="cover"
             className={styles.imagePlaceholder}
           />
           <TabContent />

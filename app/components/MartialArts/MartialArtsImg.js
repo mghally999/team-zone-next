@@ -6,7 +6,7 @@ export default function MartialArtsImg() {
   return (
     <div className={styles.martialImgBox}>
       <Image
-        src="/img3.jpeg"
+        src="/5.JPG"
         alt="Martial Arts"
         responsive="true"
         width={500}
