@@ -22,7 +22,8 @@
 
 .packageImg1,
 .packageImg2,
-.packageImg3 {
+.packageImg3,
+.packageImg4 {
   width: 100%;
   height: 60%;
   background-repeat: no-repeat;
@@ -31,15 +32,19 @@
 }
 
 .packageImg1 {
-  background-image: url("/annual.jpeg");
+  background-image: url("/month.JPG");
 }
 
 .packageImg2 {
-  background-image: url("/martial2.png");
+  background-image: url("/3month.jpeg");
 }
 
 .packageImg3 {
-  background-image: url("/martial3.jpeg");
+  background-image: url("/annual.jpeg");
+}
+
+.packageImg4 {
+  background-image: url("/family.JPG");
 }
 
 .packageContent {

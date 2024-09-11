@@ -155,7 +155,7 @@ export const AppContextProvider = ({ children }) => {
       duration: "Your Annual Savings",
     },
     {
-      imgClass: "packageImg3",
+      imgClass: "packageImg4",
       title: "Family Packages",
       duration: "Family Savings Plan",
     },
