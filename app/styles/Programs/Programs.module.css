@@ -158,6 +158,7 @@
 @media (max-width: 34em) {
   .imagePlaceholder {
     height: auto;
+    object-fit: cover;
   }
 }
 

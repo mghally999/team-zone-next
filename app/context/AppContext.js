@@ -272,13 +272,13 @@ export const AppContextProvider = ({ children }) => {
   //   );
   // }, [mentors.length]);
 
-  // const handleChange = (e) => {
-  //   const { name, value } = e.target;
-  //   setFormData((prevData) => ({
-  //     ...prevData,
-  //     [name]: value,
-  //   }));
-  // };
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -293,13 +293,21 @@ export const AppContextProvider = ({ children }) => {
         formData.gender.slice(1).toLowerCase().trim(),
     };
 
-    const whatsappMessage = `
-    Name: ${formattedData.name}
-    Email: ${formattedData.email}
-    Mobile Number: ${formattedData.phoneNumber}
-    Age: ${formattedData.age}
-    Gender: ${formattedData.gender}
-        `;
+    const whatsappMessage =
+      "Name: " +
+      formattedData.name.trim() +
+      "\n" +
+      "Email: " +
+      formattedData.email.trim() +
+      "\n" +
+      "Phone: " +
+      formattedData.phoneNumber.trim() +
+      "\n" +
+      "Age: " +
+      formattedData.age.trim() +
+      "\n" +
+      "Gender: " +
+      formattedData.gender.trim();
 
     const whatsappLink = `https://wa.me/971508272111?text=${encodeURIComponent(
       whatsappMessage
@@ -318,6 +326,7 @@ export const AppContextProvider = ({ children }) => {
         currentTab,
         setCurrentTab,
         formData,
+        handleChange,
         handleSubmit,
         isPopupVisible,
         openPopup,

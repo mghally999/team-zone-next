@@ -41,19 +41,26 @@ export default function PopupForm({ show, onClose }) {
         formData.gender.slice(1).toLowerCase().trim(),
     };
 
-    const whatsappMessage = `
-Name: ${formattedData.name}
-Email: ${formattedData.email}
-Mobile Number: ${formattedData.phoneNumber}
-Age: ${formattedData.age}
-Gender: ${formattedData.gender}
-    `;
+    const whatsappMessage =
+      "Name: " +
+      formattedData.name.trim() +
+      "\n" +
+      "Email: " +
+      formattedData.email.trim() +
+      "\n" +
+      "Phone: " +
+      formattedData.phoneNumber.trim() +
+      "\n" +
+      "Age: " +
+      formattedData.age.trim() +
+      "\n" +
+      "Gender: " +
+      formattedData.gender.trim();
 
     const whatsappLink = `https://wa.me/971508272111?text=${encodeURIComponent(
       whatsappMessage
     )}`;
-
-    window.open(whatsappLink, "_blank"); // Opens WhatsApp with the message
+    window.open(whatsappLink, "_blank");
 
     onClose(); // Closes the popup form
   };
