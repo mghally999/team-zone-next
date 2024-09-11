@@ -4,27 +4,27 @@
   background-color: #000000;
   /* padding: 4.8rem 0 9.6rem 0; */
   height: 100%;
-  background-image: url(/team-favicon.png);
+  /* background-image: url(/team-favicon.png);
   background-repeat: no-repeat;
   background-size: 9%;
-  background-position: 76% 83%;
+  background-position: 76% 83%; */
   padding: 9.6rem 0;
   margin: 0 auto;
 }
 
 @media (max-width: 59em) {
-  .sectionPrograms {
+  /* .sectionPrograms {
     background-size: 14%;
     background-position: 76% 91%;
-  }
+  } */
 }
 
 @media (max-width: 34em) {
-  .sectionPrograms {
+  /* .sectionPrograms {
     background-position: 87% 91%;
     padding: 2.4rem 0 6.4rem 0;
     background-size: 21%;
-  }
+  } */
 }
 
 @media (max-width: 34em) {
@@ -49,16 +49,21 @@
   }
 }
 
-@media (max-width: 75em) {
+/* @media (max-width: 75em) {
   .programs {
     gap: 2rem;
+  }
+} */
+
+@media (max-width: 75em) {
+  .programs {
+    padding: 4.8rem 3.2rem;
   }
 }
 
 @media (max-width: 59em) {
   .programs {
     grid-template-columns: 1fr;
-    padding: 0 8rem;
   }
 }
 
@@ -89,7 +94,19 @@
 @media (max-width: 84em) {
   .headingPrimaryPrograms {
     font-size: 4rem;
-    margin: 0 auto 1rem;
+  }
+}
+
+@media (max-width: 75em) {
+  .headingPrimaryPrograms {
+    font-size: 3.6rem;
+    margin-bottom: 2.8rem;
+  }
+}
+
+@media (max-width: 44em) {
+  .headingPrimaryPrograms {
+    margin-bottom: 2.8rem;
   }
 }
 
@@ -134,13 +151,13 @@
 
 @media (max-width: 59em) {
   .imagePlaceholder {
-    height: auto;
+    height: 500px;
   }
 }
 
 @media (max-width: 34em) {
   .imagePlaceholder {
-    height: 200px;
+    height: auto;
   }
 }
 
