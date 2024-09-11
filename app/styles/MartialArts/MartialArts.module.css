@@ -1,13 +1,13 @@
 .sectionMartialArts {
-  background-color: #e0e3e3;
+  background: linear-gradient(45deg, #ff011f, #28272b);
   padding: 5.5rem 0 0 0;
-  border-bottom: 1px solid #ff011f;
+  /* border-bottom: 1px solid #ff011f; */
 }
 
 .headingPrimaryMartial {
   font-family: "Outfit", sans-serif;
   font-weight: 700;
-  font-size: 3.8rem;
+  font-size: 4.4rem;
   line-height: 1.2;
   margin-bottom: 6.6rem;
   padding: 0 3.2rem;
@@ -15,8 +15,8 @@
 
 .martialArts {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  grid-template-columns: 1fr 0.5fr;
+  gap: 4rem;
 }
 
 @media (max-width: 84em) {

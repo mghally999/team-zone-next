@@ -3,14 +3,13 @@
   height: 100%;
   position: relative;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
-@media (max-width: 84em) {
+@media (max-width: 34em) {
   .martialImgBox {
-    display: flex;
-    flex-direction: row;
-    object-fit: fill;
+    display: grid;
+    order: 2;
   }
 }
 
@@ -24,10 +23,10 @@
 
 @media (max-width: 84em) {
   .martialImg {
-    display: block;
+    /* display: block;
     object-fit: fill;
     height: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: row; */
   }
 }
