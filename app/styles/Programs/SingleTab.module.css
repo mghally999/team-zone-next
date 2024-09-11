@@ -1,17 +1,16 @@
 /* SingleTab.module.css */
 
 .button {
-  margin-top: 1rem;
-  width: 300px;
+  margin-top: 0.5rem;
+  width: 420px;
   background-color: #ffffff;
   color: #000;
-  border: 1px solid #ff011f;
-  padding: 0.5rem 1rem;
-  font-size: 1.8rem;
+  padding: 1rem 1.5rem;
   cursor: pointer;
   transition: background-color 0.2s ease;
   border-radius: 50px;
-  padding: 1rem 0rem;
+  font-size: 2.4rem;
+  font-weight: 600;
 }
 
 @media (max-width: 59em) {

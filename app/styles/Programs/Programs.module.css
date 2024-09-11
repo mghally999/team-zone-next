@@ -1,14 +1,15 @@
 .sectionPrograms {
   font-family: "Outfit", sans-serif;
   font-weight: 800;
-  background-color: #ffffff;
-  color: #000000;
-  padding: 4.8rem 0 9.6rem 0;
+  background-color: #000000;
+  /* padding: 4.8rem 0 9.6rem 0; */
   height: 100%;
   background-image: url(/team-favicon.png);
   background-repeat: no-repeat;
   background-size: 9%;
   background-position: 76% 83%;
+  padding: 9.6rem 0;
+  margin: 0 auto;
 }
 
 @media (max-width: 59em) {
@@ -34,10 +35,10 @@
 
 .programs {
   display: grid;
-  grid-template-columns: 1fr 1.6fr;
+  grid-template-columns: 1fr 1.4fr;
   align-items: start;
-  gap: 1rem;
-  max-width: 130rem;
+  gap: 6rem;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 0 3.2rem;
 }
@@ -70,15 +71,19 @@
 .headingPrimaryPrograms {
   font-family: "Outfit", sans-serif;
   font-weight: 700;
-  font-size: 4.8rem;
   line-height: 1.2;
-  color: #000000;
-  grid-column: span 2;
+  color: #ff011f;
 
-  gap: 9.6rem;
-  max-width: 130rem;
-  margin: 0 auto 3.2rem;
+  /* gap: 9.6rem; */
+  /* margin: 0 auto 3.2rem; */
   padding: 0 3.2rem;
+
+  max-width: 120rem;
+  /* padding: 0 3.2rem; */
+  margin: 0 auto;
+
+  font-size: 4.4rem;
+  margin-bottom: 9.6rem;
 }
 
 @media (max-width: 84em) {

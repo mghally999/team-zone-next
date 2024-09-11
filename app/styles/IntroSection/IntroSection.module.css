@@ -8,25 +8,42 @@
   flex-direction: column;
   justify-content: flex-end;
   background-color: #000000;
-  padding: 1.6rem 0 6.3rem 0;
-  height: 90vh;
+  padding: 1.6rem 0 3rem 0;
+  height: 85vh;
+}
+
+@media (max-width: 59em) {
+  .sectionIntro {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (max-width: 34em) {
   .sectionIntro {
     padding: 1.6rem 0 10rem 0;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 }
 
 .intro {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   align-items: center;
-  /* gap: 9.6rem; */
-  /* max-width: 130rem; */
+  gap: 9.6rem;
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem; */
+
+  max-width: 130rem;
   margin: 0 auto;
   padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
 }
 
 @media (max-width: 84em) {
@@ -35,7 +52,22 @@
   }
 }
 
-.introTextBox {
-  grid-column: 1;
-  grid-row: 2;
+@media (max-width: 59em) {
+  .intro {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .intro {
+    padding: 0 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .introTextBox {
+    text-align: center;
+  }
 }

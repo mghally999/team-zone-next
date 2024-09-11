@@ -8,6 +8,8 @@
   font-weight: 700;
   line-height: 1.4;
   margin-bottom: 3.2rem;
+  color: #ff011f;
+  letter-spacing: -0.5px;
 }
 
 .tabContent ul {
@@ -18,6 +20,7 @@
 .tabContent li {
   font-weight: 400;
   font-size: 1.9rem;
+  color: #ffffff;
   line-height: 2;
   margin-bottom: 0.5rem;
 }

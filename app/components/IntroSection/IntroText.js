@@ -19,7 +19,7 @@ export default function IntroText() {
         Your Hub For <span>Transformation</span>
       </h1>
       <p className={styles.heroDescription}>
-        More than a sports academy we are a <span>Community</span> dedicated to
+        More than a sports academy, we are a <span>Community</span> dedicated to
         your growth and development
       </p>
       <button className={bookingButton} onClick={openPopup}>
