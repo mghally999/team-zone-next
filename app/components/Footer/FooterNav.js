@@ -5,8 +5,14 @@ import Link from "next/link";
 export default function FooterNav() {
   return (
     <nav className={styles.navCol}>
-      <Link href="/TermsConditions">
+      <Link href="/terms-conditions">
         <span className={styles.footerHeading}>TERMS AND CONDITIONS</span>
+      </Link>
+      <Link href="/privacy-policy">
+        <span className={styles.footerHeading}>Privacy Policy</span>
+      </Link>
+      <Link href="/refunds-returns">
+        <span className={styles.footerHeading}>Refunds & Returns</span>
       </Link>
     </nav>
   );
