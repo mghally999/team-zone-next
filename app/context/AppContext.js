@@ -143,7 +143,7 @@ export const AppContextProvider = ({ children }) => {
     {
       imgClass: "packageImg1",
       title: "Monthly Package",
-      duration: "Ultimate Starter Package",
+      duration: "Ultimate Starter",
     },
     {
       imgClass: "packageImg2",
