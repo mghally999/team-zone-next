@@ -227,10 +227,6 @@ export const AppContextProvider = ({ children }) => {
     { imgSrc: "/customers/customer-6.jpg", altText: "Customer photo 6" },
   ];
 
-  // useEffect(() => {
-  //   setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-  // }, [slides.length]);
-
   const nextSlide = useCallback(() => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
   }, [slides.length]);
@@ -248,48 +244,18 @@ export const AppContextProvider = ({ children }) => {
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === "ArrowRight") {
-        nextSlide(); // Move to the next slide
+        nextSlide();
       } else if (event.key === "ArrowLeft") {
-        prevSlide(); // Move to the previous slide
+        prevSlide();
       }
     };
 
-    // Add event listener for keydown
     window.addEventListener("keydown", handleKeyDown);
 
-    // Cleanup function to remove event listener when component unmounts
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
   }, [nextSlide, prevSlide]);
-
-  // useEffect(() => {
-  //   const isMobile = window.innerWidth <= 768;
-  //   const slideWidth = isMobile ? 100 : 50; // 100% width for mobile, 50% width for desktop
-
-  //   // Set the translation for each mentor card based on the current slide
-  //   mentorRef.current.forEach((s, i) => {
-  //     const offset = slideWidth * (i - curSlide);
-  //     s.style.transform = `translateX(${offset}%)`;
-  //     s.style.display =
-  //       i >= curSlide && i < curSlide + (isMobile ? 1 : 2) ? "block" : "none";
-  //   });
-  // }, [curSlide, mentors.length]);
-
-  // const nextSlideMentors = useCallback(() => {
-  //   const isMobile = window.innerWidth <= 768;
-  //   setCurSlide(
-  //     (prevSlide) => (prevSlide + 1) % (mentors.length - (isMobile ? 0 : 1))
-  //   );
-  // }, [mentors.length]);
-
-  // const prevSlideMentors = useCallback(() => {
-  //   const isMobile = window.innerWidth <= 768;
-  //   setCurSlide(
-  //     (prevSlide) =>
-  //       (prevSlide - 1 + mentors.length) % (mentors.length - (isMobile ? 0 : 1))
-  //   );
-  // }, [mentors.length]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
