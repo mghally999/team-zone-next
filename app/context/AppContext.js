@@ -227,9 +227,9 @@ export const AppContextProvider = ({ children }) => {
     { imgSrc: "/customers/customer-6.jpg", altText: "Customer photo 6" },
   ];
 
-  useEffect(() => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-  }, [slides.length]);
+  // useEffect(() => {
+  //   setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+  // }, [slides.length]);
 
   const nextSlide = useCallback(() => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
