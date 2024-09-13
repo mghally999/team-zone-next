@@ -211,9 +211,9 @@ export const AppContextProvider = ({ children }) => {
       name: "Eduardo",
       img: "/trainers/eduardoo.JPG",
       details: [
-        "BJJ Black belt",
-        "ACB JJ World Champ",
-        "AJP Europe Continental Pro medalist",
+        "Multiple Times Champion",
+        "Experience In Fighting",
+        "Boxing in Russian-Kazakhstan-Brazil",
       ],
     },
   ];
@@ -236,10 +236,6 @@ export const AppContextProvider = ({ children }) => {
       (prevSlide) => (prevSlide - 1 + slides.length) % slides.length
     );
   }, [slides.length]);
-
-  const goToSlide = useCallback((slideIndex) => {
-    setCurrentSlide(slideIndex);
-  }, []);
 
   useEffect(() => {
     const handleKeyDown = (event) => {
@@ -319,7 +315,6 @@ export const AppContextProvider = ({ children }) => {
         currentSlide,
         nextSlide,
         prevSlide,
-        goToSlide,
         slides,
         services,
         packages,
