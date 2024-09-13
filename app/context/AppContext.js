@@ -245,6 +245,24 @@ export const AppContextProvider = ({ children }) => {
     setCurrentSlide(slideIndex);
   }, []);
 
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === "ArrowRight") {
+        nextSlide(); // Move to the next slide
+      } else if (event.key === "ArrowLeft") {
+        prevSlide(); // Move to the previous slide
+      }
+    };
+
+    // Add event listener for keydown
+    window.addEventListener("keydown", handleKeyDown);
+
+    // Cleanup function to remove event listener when component unmounts
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [nextSlide, prevSlide]);
+
   // useEffect(() => {
   //   const isMobile = window.innerWidth <= 768;
   //   const slideWidth = isMobile ? 100 : 50; // 100% width for mobile, 50% width for desktop
