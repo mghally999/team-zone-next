@@ -131,7 +131,7 @@ export const AppContextProvider = ({ children }) => {
     "/gallery/gallery3.JPG",
     "/gallery/gallery4.JPG",
     "/gallery/gallery5.JPG",
-    "/gallery/gallery6.JPG",
+    "/gallery/gallery66.png",
     "/gallery/gallery7.JPG",
     "/gallery/gallery8.JPG",
     "/gallery/gallery9.JPG",
