@@ -57,6 +57,7 @@ const content = [
       "Benefits: Confidence and Growth",
       "Training: Adolescent Development",
     ],
+    img: "/kids1115.JPG",
   },
   {
     label: "White Belt Intro Class",

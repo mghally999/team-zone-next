@@ -14,7 +14,7 @@ export default function IntroText() {
   );
 
   return (
-    <div className={styles.introTextBox}>
+    <>
       <h1 className={styles.headingPrimaryIntro}>
         Your Hub For <span>Transformation</span>
       </h1>
@@ -27,6 +27,6 @@ export default function IntroText() {
       </button>
 
       <PopupForm show={isPopupVisible} onClose={closePopup} />
-    </div>
+    </>
   );
 }

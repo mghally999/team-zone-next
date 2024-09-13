@@ -140,6 +140,7 @@
 
 .imagePlaceholder {
   width: 100%;
+  border-radius: 7px;
   height: 380px; /* This can be adjusted as needed */
   margin-bottom: 1.4rem;
   background-color: #ccc;
@@ -157,7 +158,7 @@
 
 @media (max-width: 34em) {
   .imagePlaceholder {
-    height: auto;
+    height: 200px;
     object-fit: cover;
   }
 }

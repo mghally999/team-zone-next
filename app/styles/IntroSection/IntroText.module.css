@@ -1,14 +1,13 @@
 .headingPrimaryIntro {
   font-family: "Outfit", sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 5.2rem;
   line-height: 1.05;
   letter-spacing: -0.5px;
-  margin-bottom: 3.2rem;
+  /* margin-bottom: 3.2rem; */
   display: inline-block;
-  padding-left: 1rem;
-  /* background: #ff011f; */
   border-radius: 10px;
+  color: #000000;
 }
 
 @media (max-width: 84em) {
@@ -19,9 +18,9 @@
 }
 
 .headingPrimaryIntro span {
-  color: #ff011f;
-  background: #000000;
-  padding: 0 1rem;
+  /* color: #ff011f; */
+  /* background: #000000; */
+  /* padding: 0 1rem; */
   border-radius: 10px;
 }
 
@@ -36,21 +35,22 @@
 }
 
 .heroDescription {
-  font-size: 3rem;
+  font-size: 3.6rem;
   font-weight: 600;
   letter-spacing: -1px;
   line-height: 1.6;
-  margin-bottom: 4.8rem;
-  color: #000000;
+  margin-bottom: 1.2rem;
+  color: #ffffff;
+  /* white-space: nowrap; */
   display: inline-block;
 }
 
 .heroDescription span {
-  background-color: #ff011f;
-  color: #000000;
+  /* background-color: #ff011f; */
+  /* color: #000000; */
   font-weight: 500;
   letter-spacing: -0.5px;
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
   border-radius: 7px;
 }
 
@@ -72,7 +72,7 @@
 
 .btn {
   font-family: "Oswald", sans-serif;
-  display: inline-block;
+  display: flex;
   text-decoration: none;
   font-size: 2.2rem;
   font-weight: 600;
@@ -101,6 +101,6 @@
   background-color: #fff;
 }
 
-.margin-right-sm {
+/* .margin-right-sm {
   margin-right: 1.6rem;
-}
+} */
