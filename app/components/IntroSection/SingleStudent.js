@@ -9,6 +9,7 @@ export default function SingleStudent({ imgSrc, altText }) {
       alt={altText}
       width={50}
       height={50}
+      quality={70}
       priority
     />
   );

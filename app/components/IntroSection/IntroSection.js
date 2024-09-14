@@ -12,6 +12,7 @@ export default function IntroSection() {
             alt="Background Image"
             layout="fill"
             className={styles.backgroundImage}
+            quality={70}
             priority
           />
         </div>

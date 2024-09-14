@@ -12,6 +12,7 @@ export default function MartialArtsImg() {
         width={500}
         height={300}
         className={styles.martialImg}
+        quality={70}
         priority
       />
     </div>
