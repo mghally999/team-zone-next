@@ -123,7 +123,6 @@ export const AppContextProvider = ({ children }) => {
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const [curSlide, setCurSlide] = useState(0);
-  const mentorRef = useRef([]);
 
   const slides = [
     "/gallery/gallery1.JPG",

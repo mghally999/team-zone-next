@@ -37,6 +37,7 @@ export default function Programs() {
             height={400}
             objectFit="cover"
             className={styles.imagePlaceholder}
+            priority
           />
           <TabContent />
         </div>
