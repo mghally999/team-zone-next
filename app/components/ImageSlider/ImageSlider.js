@@ -37,17 +37,6 @@ export default function ImageSlider() {
       <button onClick={nextSlide} className={styles.nextBtn}>
         &rarr;
       </button>
-      <div className={styles.dots}>
-        {slides.map((_, index) => (
-          <span
-            key={index}
-            className={`${styles.dot} ${
-              index === currentSlide ? styles.active : ""
-            }`}
-            onClick={() => goToSlide(index)}
-          ></span>
-        ))}
-      </div>
     </div>
   );
 }
