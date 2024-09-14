@@ -1,8 +1,6 @@
 .sectionSports {
   padding: 5.5rem 0;
-  /* background-color: #000000; */
-  /* background: linear-gradient(45deg, #000000, #28272b); */
-  background: linear-gradient(359deg, #000000, #28272b);
+  background: linear-gradient(185deg, #c1c6d4, #c1c6d4);
 }
 
 @media (max-width: 34em) {
@@ -26,7 +24,8 @@
   font-weight: 700;
   font-size: 76px;
   line-height: 1.2;
-  color: #ffffff;
+  color: #000000;
+  letter-spacing: 1px;
 }
 
 @media (max-width: 84em) {
