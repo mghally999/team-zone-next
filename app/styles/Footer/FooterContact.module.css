@@ -1,10 +1,11 @@
 .addressCol {
   display: flex;
+  font-size: 3rem;
   flex-direction: column;
 }
 
 .footerHeading {
-  font-size: 1.8rem;
+  font-size: 3.4rem;
   font-weight: 700;
   color: #fff;
   margin-bottom: 1.2rem;
@@ -18,9 +19,8 @@
 
 .contacts p,
 .footerLink {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #fff;
-  margin-bottom: 1rem;
   text-decoration: none;
   transition: all 0.3s;
 }

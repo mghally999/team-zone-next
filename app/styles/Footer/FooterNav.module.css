@@ -1,12 +1,24 @@
 .navCol {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
+  width: fit-content;
+}
+
+@media (max-width: 75em) {
+  .navCol {
+    width: auto;
+  }
+}
+
+@media (max-width: 34em) {
+  .navCol {
+    width: auto;
+  }
 }
 
 .footerHeading {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 1.2rem;
 }

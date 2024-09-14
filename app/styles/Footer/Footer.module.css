@@ -1,12 +1,13 @@
 .footer {
   background-color: #000;
-  padding: 4rem 0;
   border-top: 1px solid #ff011f;
   border-bottom: 1px solid #ff011f;
+  height: 50vh;
 }
 
 @media (max-width: 59em) {
   .footer {
+    height: 80vh;
     text-align: center;
   }
 }
@@ -19,15 +20,18 @@
 
 .gridFooter {
   display: grid;
-  grid-template-columns: 1.6fr 1.5fr 1fr;
-  column-gap: 6rem;
+  grid-template-columns: 2fr 1fr;
+  /* align-items: center; */
+  justify-content: center;
+  /* row-gap: 9.6rem; */
   align-items: center;
-  row-gap: 9.6rem;
+  margin: 0 auto;
+  height: 100%;
 }
 
 @media (max-width: 59em) {
   .gridFooter {
     grid-template-columns: 1fr;
-    row-gap: 5rem;
+    /* row-gap: 5rem; */
   }
 }

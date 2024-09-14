@@ -4,6 +4,12 @@
   /* border-bottom: 1px solid #ff011f; */
 }
 
+@media (max-width: 34em) {
+  .sectionMartialArts {
+    background: linear-gradient(164deg, #ff011f, #28272b);
+  }
+}
+
 .headingPrimaryMartial {
   font-family: "Outfit", sans-serif;
   font-weight: 700;

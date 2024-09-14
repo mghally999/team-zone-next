@@ -134,7 +134,7 @@ export const AppContextProvider = ({ children }) => {
     "/gallery/gallery66.png",
     "/gallery/gallery7.JPG",
     "/gallery/gallery8.JPG",
-    "/gallery/gallery9.JPG",
+    "/gallery/gallery99.jpg",
   ];
 
   const services = ["BJJ", "Grappling", "Boxing"];

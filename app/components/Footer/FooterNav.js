@@ -11,9 +11,6 @@ export default function FooterNav() {
       <Link href="/privacy-policy">
         <span className={styles.footerHeading}>Privacy Policy</span>
       </Link>
-      <Link href="/refunds-returns">
-        <span className={styles.footerHeading}>Refunds & Returns</span>
-      </Link>
     </nav>
   );
 }

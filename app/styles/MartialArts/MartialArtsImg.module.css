@@ -9,7 +9,7 @@
 @media (max-width: 34em) {
   .martialImgBox {
     display: grid;
-    order: 2;
+    /* order: 2; */
   }
 }
 
