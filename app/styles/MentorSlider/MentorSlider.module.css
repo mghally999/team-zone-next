@@ -55,7 +55,7 @@
 .mentorCard {
   overflow: hidden;
   transition: transform 0.8s ease-in-out;
-  height: 904px;
+  /* height: 904px; */
 }
 
 @media (max-width: 59em) {
@@ -77,11 +77,11 @@
 }
 .mentorImg {
   position: relative;
-  height: 700px;
-  /* width: 464.227px; */
+  width: 464.23px;
+  height: 450px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 51%;
+  background-position: 100% 11%;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
