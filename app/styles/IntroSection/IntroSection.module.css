@@ -10,13 +10,13 @@
 
 @media (max-width: 75em) {
   .sectionIntro {
-    height: 50vh;
+    height: 80vh;
   }
 }
 
 @media (max-width: 34em) {
   .sectionIntro {
-    padding: 1.6rem 0 5rem 0;
+    padding: 1.6rem 0 3rem 0;
     flex-direction: column;
     justify-content: flex-end;
   }
