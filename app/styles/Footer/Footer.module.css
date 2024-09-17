@@ -21,9 +21,7 @@
 .gridFooter {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  /* align-items: center; */
   justify-content: center;
-  /* row-gap: 9.6rem; */
   align-items: center;
   margin: 0 auto;
   height: 100%;
@@ -32,6 +30,5 @@
 @media (max-width: 59em) {
   .gridFooter {
     grid-template-columns: 1fr;
-    /* row-gap: 5rem; */
   }
 }

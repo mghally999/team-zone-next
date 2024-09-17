@@ -55,7 +55,6 @@
 .mentorCard {
   overflow: hidden;
   transition: transform 0.8s ease-in-out;
-  /* height: 904px; */
 }
 
 @media (max-width: 59em) {

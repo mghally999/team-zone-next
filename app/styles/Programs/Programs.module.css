@@ -2,29 +2,9 @@
   font-family: "Outfit", sans-serif;
   font-weight: 800;
   background-color: #000000;
-  /* padding: 4.8rem 0 9.6rem 0; */
   height: 100%;
-  /* background-image: url(/team-favicon.png);
-  background-repeat: no-repeat;
-  background-size: 9%;
-  background-position: 76% 83%; */
   padding: 9.6rem 0;
   margin: 0 auto;
-}
-
-@media (max-width: 59em) {
-  /* .sectionPrograms {
-    background-size: 14%;
-    background-position: 76% 91%;
-  } */
-}
-
-@media (max-width: 34em) {
-  /* .sectionPrograms {
-    background-position: 87% 91%;
-    padding: 2.4rem 0 6.4rem 0;
-    background-size: 21%;
-  } */
 }
 
 @media (max-width: 34em) {
@@ -49,12 +29,6 @@
   }
 }
 
-/* @media (max-width: 75em) {
-  .programs {
-    gap: 2rem;
-  }
-} */
-
 @media (max-width: 75em) {
   .programs {
     padding: 4.8rem 3.2rem;
@@ -78,13 +52,9 @@
   font-weight: 700;
   line-height: 1.2;
   color: #ff011f;
-
-  /* gap: 9.6rem; */
-  /* margin: 0 auto 3.2rem; */
   padding: 0 3.2rem;
 
   max-width: 120rem;
-  /* padding: 0 3.2rem; */
   margin: 0 auto;
 
   font-size: 4.4rem;
@@ -141,11 +111,11 @@
 .imagePlaceholder {
   width: 100%;
   border-radius: 7px;
-  height: 380px; /* This can be adjusted as needed */
+  height: 380px;
   margin-bottom: 1.4rem;
   background-color: #ccc;
-  position: inset; /* Ensure positioning is set for child elements */
-  overflow: hidden; /* Hide any part of the image that overflows the container */
+  position: inset;
+  overflow: hidden;
   object-fit: cover;
   object-position: center;
 }

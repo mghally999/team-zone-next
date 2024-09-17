@@ -1,12 +1,5 @@
 @import url("https://unpkg.com/ionicons@5.5.2/dist/css/ionicons.min.css");
 
-/*
---- 01 TYPOGRAPHY SYSTEM
-
-- Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-*/
-
 /* Outfit */
 @font-face {
   font-family: "Outfit";
@@ -186,10 +179,6 @@ body {
   margin-right: 1.6rem;
 }
 
-/* Global Styles */
-
-/* Focus effect */
-/* Remove arrows for number input */
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;

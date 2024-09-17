@@ -43,35 +43,14 @@
   border: none;
   cursor: pointer;
   z-index: 2;
-  padding: 1.5rem; /* Increase the padding to make the buttons bigger */
-  font-size: 2rem; /* Increase the font size for larger arrow icons */
+  padding: 1.5rem;
+  font-size: 2rem;
 }
 
 .prevBtn {
-  left: 20px; /* Adjusted positioning */
+  left: 20px;
 }
 
 .nextBtn {
-  right: 20px; /* Adjusted positioning */
+  right: 20px;
 }
-
-/* .dots {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
-}
-
-.dot {
-  width: 12px;
-  height: 12px;
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.dot.active {
-  background-color: #333333; 
-} */
