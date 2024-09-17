@@ -1,14 +1,14 @@
 .sectionMartialArts {
-  background: linear-gradient(45deg, #ff011f, #28272b);
+  background: linear-gradient(45deg, #eb5466, #ff011f);
   padding: 5.5rem 0 0 0;
   /* border-bottom: 1px solid #ff011f; */
 }
 
-@media (max-width: 34em) {
+/* @media (max-width: 34em) {
   .sectionMartialArts {
     background: linear-gradient(164deg, #ff011f, #28272b);
   }
-}
+} */
 
 .headingPrimaryMartial {
   font-family: "Outfit", sans-serif;
